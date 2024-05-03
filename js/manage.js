@@ -75,6 +75,9 @@ new Vue({
         // this.form.url = ogUrlMeta ? ogUrlMeta.getAttribute('content') : '';
 
     },
+    clearZiYuanHandler(){
+      this.yuanma = "";
+    },
     setDefaultIconHandler(){
       this.form.icon = "/web/favicon.ico";
     },
