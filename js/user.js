@@ -10,7 +10,7 @@ $(function () {
     // pug.loading(false, "loadingBox", 1);
     beforeLoginBoxInit();
     function beforeLoginBoxInit() {
-        $(".app-search-wrapper").css("background", "url(/images/bgimg_1.jpg)");
+        $(".app-search-wrapper").css("background", "url(./images/bgimg_1.jpg)");
         $("nav .nav-user-wraper").html(`<button class="pug-btn pug-btn-sm pug-btn-primary" id="login">登录 / 注册</button>\n`);
         // 获取系统导航
         // pug.close("loadingBox");
