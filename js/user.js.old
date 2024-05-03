@@ -1,0 +1,806 @@
+$(function () {
+  /**===工具方法==================================================================================================================================================== */
+  // 判空方法
+  function validBlank(str) {
+    return str === "" || str === "undefined" || str == undefined;
+  }
+
+  /**
+   * 根据时间返回早上，中午，下午，晚上
+   * @returns
+   */
+  function getLocalTime() {
+    let hour = new Date().getHours();
+    if (hour >= 6 && hour < 12) {
+      return "早 上 好 ！";
+    } else if (hour >= 12 && hour < 14) {
+      return "中 午 好 ！";
+    } else if (hour >= 14 && hour < 18) {
+      return "下 午 好 ！";
+    } else {
+      return "晚 上 好 ！";
+    }
+  }
+
+  // 网址规范工具类 最终得到xxx/favicon.ico
+  function getSubstr(url) {
+    if (url.substr(-1) == "/") {
+      return url + "favicon.ico";
+    }
+    return url + "/favicon.ico";
+  }
+
+  // 获取cookie
+  function getCookies() {
+    let cookies = document.cookie.split("; ");
+    let result = {};
+    for (let i = 0; i < cookies.length; i++) {
+      let parts = cookies[i].split("=");
+      result[parts[0]] = parts[1];
+    }
+    return result;
+  }
+  /**===封装ajax=========================================================================================================================================== */
+  let QdAjax = {
+    baseUrl: "http://127.0.0.1:8087/web/v1/api",
+    post: function (url, callback, data, headers) {
+      $.ajax({
+        type: "post",
+        timeout: 5000,
+        url: this.baseUrl + url,
+        headers,
+        data,
+        success: function (res) {
+          callback && callback(res, true);
+        },
+        error: function (e) {
+          pug.message.error("服务异常");
+          callback && callback(e, false);
+        },
+      });
+    },
+    get: function (url, callback, data, headers) {
+      $.ajax({
+        type: "get",
+        timeout: 10,
+        url: this.baseUrl + url,
+        headers,
+        data,
+        success: function (res) {
+          callback && callback(res, true);
+        },
+        error: function (e) {
+          pug.close("loadingBox");
+          $("#login").prop("disabled", true);
+          const html = `<span class="fz12" style="display: block;padding: 13px;color: #155724;background: #d4edda;border-radius: 6px;text-align: center;letter-spacing: 2px;">
+                            -- 后台应用服务异常！已为您加载默认应用  --
+                         </span>\n`;
+          $("#custom_link_box").html(html);
+          createAppDom(SERVR_FAIL_DEFAULT_APPS);
+          setAppToc(SERVR_FAIL_DEFAULT_APPS);
+          callback && callback(e, false);
+        },
+      });
+    },
+  };
+  /**===封装对token的操作=========================================================================================================================================== */
+  let QdToken = {
+    token: getCookies()["Authorization"] || "",
+    setToken(token) {
+      this.token = token;
+    },
+    tokenHeader() {
+      return { Authorization: "Bearer " + this.token };
+    },
+    removeToken() {
+      document.cookie = "Authorization" + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      this.token = "";
+      pug.removeCache("USER_INFO");
+    },
+    setUser(user) {
+      pug.setCache("USER_INFO", user, 30);
+    },
+    getUser() {
+      return pug.getCache("USER_INFO") || {};
+    },
+  };
+  /* =======================*/
+  let systemNotice = { message: "", sign: -1 },
+    appArrs = [], // 总
+    editingApp = {}; //等待编辑
+  //
+  // QdToken.setToken("DBSH4aGjtmjvvxhLNnmjhze9sZmIgKb4dZrGIXEW2xCybrCe1sdI67RvYTvoBjmM")
+  /**===登录初始化校验================================================================================================================================================== */
+  pug.loading(false, "loadingBox", 1);
+  loginInit(QdToken.token);
+  function loginInit(token) {
+    if (!validBlank(token)) {
+      QdAjax.get(
+        "/userInfo",
+        (res) => {
+          if (res.code == 200) {
+            QdToken.setUser(res.data);
+            pug.close("loadingBox");
+            // 1、获取公告
+            getSysMsg();
+            // 2、获取用户信息
+            userBoxInit();
+            // 3、加载链接
+            loadAppInit();
+            // 4、加载系统导航
+            if (res.data.sysFlag == 0) {
+              alert(1);
+              loadSysAppInit();
+            }
+          } else {
+            pug.message.error(res.message || "登录异常");
+            QdToken.removeToken();
+            beforeLoginBoxInit();
+          }
+        },
+        {},
+        QdToken.tokenHeader()
+      );
+    } else {
+      beforeLoginBoxInit();
+    }
+    function beforeLoginBoxInit() {
+      $(".app-search-wrapper").css("background", "url(/images/bgimg_1.jpg)");
+      $("nav .nav-user-wraper").html(`<button class="pug-btn pug-btn-sm pug-btn-primary" id="login">登录 / 注册</button>\n`);
+      // 获取系统导航
+      loadSysAppInit();
+      // 登录注册
+      $("#login").on("click", function () {
+        loginBoxInit();
+      });
+    }
+  }
+  /**===登录窗口初始化================================================================================================================================================== */
+  function loginBoxInit() {
+    // 1、添加元素到视图
+    let html = `<div class="login-wrapper">
+                    <div class="hidebg"></div>
+                    <div class="login-fixed">
+                        <div class="login-container animate__animated animate__fadeIn">
+                            <p><i class="iconfont icon-close" id="closeLoginWrapper"></i></p>
+                            <div class="main-login-container">
+                                <h1>账号登录</h1>
+                                <div class="l-item">
+                                    <input type="text" id="loginAccount" placeholder="请输入5-18位账号" v-model="user.account">
+                                </div>
+                                <div class="l-item">
+                                    <input type="password" id="loginPwd" placeholder="请输入5-18位密码" v-model="user.password">
+                                </div>
+                                <div class="l-item">
+                                <button class="pug-btn pug-btn-primary pug-btn-lg fluid login">登 录</button>
+                                </div>
+                                <p style="text-align: center;"><a href="javascript:void(0);" class="to-reg-btn">没有账号?点我注册</a></p>
+                            </div>
+                            <div class="main-register-container">
+                                <h1>账号注册</h1>
+                                <div class="l-item">
+                                    <input type="text" id="regaccount" placeholder="请输入5-18位账号" v-model="user.account">
+                                </div>
+                                <div class="l-item">
+                                    <input type="password" id="regPwd" placeholder="请输入5-18位密码" v-model="user.password">
+                                </div>
+                                <div class="l-item">
+                                    <input type="password" id="regRePwd" placeholder="请确认5-18位密码" v-model="user.password">
+                                </div>
+                                <div class="l-item">
+                                    <button class="pug-btn pug-btn-success pug-btn-lg fluid register">注 册</button>
+                                </div>
+                                <p style="text-align: center;"><a href="javascript:void(0);" class="to-login-btn">已有账号?前往登录</a></p>
+                            </div>
+                            <p class="xieyi">
+                                注册登录即表示同意<a href="https://www.yuque.com/qian-du/ii0ixh/vrnoua1rrp6kphb4?singleDoc" target="_blank">用户协议</a>
+                                和<a href="https://www.yuque.com/qian-du/ii0ixh/gbhdffio5s69kezy?singleDoc" target="_blank">隐私政策</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>`;
+    $("body").append(html);
+    // 取消登录窗口
+    $("#closeLoginWrapper").on("click", function (e) {
+      e.stopPropagation();
+      e.preventDefault();
+      $(".login-container")
+        .removeClass("animate__animated animate__fadeIn")
+        .addClass("animate__animated animate__backOutUp")
+        .fadeOut(300, function () {
+          $(".login-wrapper").remove();
+        });
+    });
+    // 跳转注册页
+    $(".login-container .to-reg-btn").on("click", function (e) {
+      e.stopPropagation();
+      e.preventDefault();
+      $(".main-login-container").fadeOut(300, function () {
+        clearLoginRegForm();
+        $(".main-register-container").fadeIn();
+      });
+    });
+    // 跳转登录页
+    $(".login-container .to-login-btn").on("click", function (e) {
+      e.stopPropagation();
+      e.preventDefault();
+      $(".main-register-container").fadeOut(300, function () {
+        clearLoginRegForm();
+        $(".main-login-container").fadeIn();
+      });
+    });
+    // 点击登录事件
+    $(".login-container .login").on("click", function () {
+      let account = $("#loginAccount").val();
+      let password = $("#loginPwd").val();
+      if (validBlank(account)) {
+        pug.message.warn("请输入账号!");
+        $("#loginAccount").focus();
+        return;
+      }
+      if (validBlank(password)) {
+        pug.message.warn("请输入密码!");
+        $("#loginPwd").focus();
+        return;
+      }
+      const param = {
+        account: account,
+        password: password,
+      };
+      // 登录请求
+      QdAjax.post(
+        "/login",
+        (res) => {
+          if (res.code == 200) {
+            pug.message.success(res.message);
+            QdToken.setToken(res.data);
+            console.log(res.data); // TODO
+            loginInit(res.data);
+            $("#closeLoginWrapper").trigger("click");
+          } else {
+            pug.message.error(res.message);
+          }
+        },
+        param
+      );
+    });
+    // 点击注册事件
+    $(".login-container .register").on("click", function () {
+      let account = $("#regaccount").val();
+      let password = $("#regPwd").val();
+      let reqPassword = $("#regRePwd").val();
+      if (validBlank(account)) {
+        pug.message.warn("请输入账号!");
+        $("#regaccount").focus();
+        return;
+      }
+      if (validBlank(password)) {
+        pug.message.warn("请输入密码!");
+        $("#regPwd").focus();
+        return;
+      }
+      if (validBlank(reqPassword)) {
+        pug.message.warn("请确认密码!");
+        $("#regRePwd").focus();
+        return;
+      }
+      if (password != reqPassword) {
+        pug.message.warn("密码输入不一致!");
+        return;
+      }
+      const param = {
+        account: account,
+        password: password,
+        reqPassword: reqPassword,
+      };
+      // 注册请求
+      QdAjax.post(
+        "/register",
+        (res) => {
+          if (res.code == 200) {
+            pug.message.success(res.message);
+          } else {
+            pug.message.error(res.message);
+          }
+        },
+        param
+      );
+    });
+    // 切换时清空表单
+    function clearLoginRegForm() {
+      $("#loginAccount").val("");
+      $("#loginPwd").val("");
+      $("#regaccount").val("");
+      $("#regPwd").val("");
+      $("#regRePwd").val("");
+    }
+  }
+  /**===加载用户组件==================================================================================================================================================== */
+  function userBoxInit() {
+    let user = QdToken.getUser();
+    // 设置背景图
+    if (!validBlank(user.bgimg)) {
+      $(".app-search-wrapper").css("background", `url(${user.bgimg})`);
+    }
+    // 获得用户信息;
+    let amdinHtml = `<a class="note-btn"></a>\n`;
+    if (user.uid == 1) {
+      amdinHtml = `<a class="note-btn" href="/note/edit"><i class="iconfont icon-xitongguanli"></i>前往管理</a>\n`;
+    }
+    // 显示用户视图
+    let html = `<span class="msg" id="loadMsgBtn"><i class="iconfont icon-weibiaoti554"></i>消息</span>
+            <span class="user-expand">
+              <img class="nav-avatar" src="${user.avatar}">
+              <a class="ml-5" href="javascript:void(0);">${user.nickname}<i class="iconfont icon-xiangxia1"></i></a>
+            </span>
+            <div class="user-option-wrapper">
+                ${amdinHtml}
+                <div style="padding: 0 15px 5px 15px;">
+                    <div class="pug-row">
+                        <div class="pug-col-md6 pug-col-xs6" style="text-align: center">
+                            <span class="show-num">${user.panelCount}</span>
+                            <span class="show-name">分栏</span>
+                        </div>
+                        <div class="pug-col-md6 pug-col-xs6" style="text-align: center">
+                            <span class="show-num">${user.appCount}</span>
+                            <span class="show-name">导航</span>
+                        </div>
+                        <button class="pug-btn pug-btn-primary radis sign-btn">
+                            <i class="iconfont icon-zhifeiji mr-3"></i>${getLocalTime()}
+                        </button>
+                    </div>
+                </div>
+                <hr>
+                <div style="padding: 0 5px">
+                  <a class="option-item" href="javascript:void(0);" id="userSettingBtn">
+                    <i class="iconfont icon-shezhi-jiemianshezhi"></i>个人设置
+                  </a>
+                  <a class="option-item" href="javascript:void(0);" id="addPanelBtn">
+                      <i class="iconfont icon-lanmuleibie"></i>添加分栏
+                  </a>
+                  <a class="option-item" href="javascript:void(0);" id="setPanelBtn">
+                      <i class="iconfont icon-lanmupeizhi"></i>管理分栏
+                  </a>
+                  <a class="option-item" href="javascript:void(0);" id="addNavBtn">
+                      <i class="iconfont icon-lanmuleibie"></i>添加链接
+                  </a>
+                </div>
+                <hr>
+                <div style="padding: 0 5px 10px 5px">
+                    <a class="option-item" id="logoutBtn" href="javascript:void(0);" id="logoutBtn">
+                        <i class="iconfont icon-tuichu"></i>退出登录</a>
+                </div>
+            </div>\n`;
+    $("nav .nav-user-wraper").html(html);
+    // 弹出功能区
+    $(".nav-user-wraper .user-expand").on("click", function () {
+      $("nav.header .user-option-wrapper").show();
+    });
+    // 离开区域后不可见
+    $(".nav-user-wraper .user-option-wrapper").mouseleave(function () {
+      $(this).hide();
+    });
+    // 自定义css
+    if (!validBlank(user.style)) {
+      includeStyleElement(user.style);
+    }
+
+    // 个人设置
+    $("#userSettingBtn").on("click", function () {
+      let user = QdToken.getUser();
+      $(".userInfo-uid").eq(0).val(user.uid);
+      $(".userInfo-nickname").eq(0).val(user.nickname);
+      $(".userInfo-avatar").eq(0).val(user.avatar);
+      $(".userInfo-bgimg").eq(0).val(user.bgimg);
+      $(".userInfo-sysNavSelect").eq(0).val(user.sysFlag), $(".userInfo-style").eq(0).val(user.style);
+      pug.dialog("userInfoDialog", () => {});
+    });
+
+    // 添加分栏
+    $("#addPanelBtn").on("click", function () {
+      pug.dialog("addPanelDialog", () => {});
+    });
+
+    // 管理分栏
+    $("#setPanelBtn").on("click", function () {
+      pug.dialog("setPanelDialog", () => {
+        pug.message.tip("这是取消操作的回调！");
+      });
+    });
+
+    // 添加导航
+    $("#addNavBtn").on("click", function () {
+      categoryInit(appArrs);
+      if (Object.keys(editingApp).length != 0) {
+        $(".app-id").eq(0).val(editingApp.id);
+        $(".app-cateSelectPid").eq(0).val(editingApp.pid);
+        $(".app-title").eq(0).val(editingApp.title);
+        $(".app-url").eq(0).val(editingApp.url);
+        $(".app-icon").eq(0).val(editingApp.icon);
+        $(".app-sort").eq(0).val(editingApp.sort);
+        $(".app-statusSelect").eq(0).val(editingApp.status);
+      }
+      // 链接标签移出后自动生成图标
+      $(".app-url")
+        .eq(0)
+        .on("keyup input", function () {
+          if (!validBlank($(this).val())) {
+            $(".app-icon")
+              .eq(1)
+              .val(getSubstr($(this).val()));
+          }
+        });
+      pug.dialog("addNavDialog", () => {
+        editingApp = {};
+        $(".app-id").eq(0).val("");
+        $(".app-cateSelectPid").eq(0).val("");
+        $(".app-title").eq(0).val("");
+        $(".app-url").eq(0).val("");
+        $(".app-icon").eq(0).val("");
+        $(".app-sort").eq(0).val("");
+        $(".app-statusSelect").eq(0).val("");
+      });
+      // 分类Select初始化
+      function categoryInit(categoryArr) {
+        let options = "";
+        for (let i = 0; i < categoryArr.length; i++) {
+          const element = categoryArr[i];
+          options += `<option value="${element.id}">${element.title}</option>\n`;
+        }
+        $(".app-cateSelectPid").html(options);
+      }
+    });
+
+    // 退出登录
+    $("#logoutBtn").on("click", function () {
+      QdAjax.post(
+        "/logout",
+        (res) => {
+          if (res.code == 200) {
+            pug.message.success(res.message);
+            QdToken.removeToken();
+            location.reload();
+          } else {
+            pug.message.error(res.message);
+          }
+        },
+        {},
+        QdToken.tokenHeader()
+      );
+    });
+
+    // 收件箱消息
+    $("#loadMsgBtn").on("click", function () {
+      if (validBlank(systemNotice.message)) {
+        pug.message.tip("暂无未读公告");
+        return;
+      }
+      pug.confirm(
+        systemNotice.message,
+        "系统公告",
+        {
+          btn: ["朕已阅", "关闭"],
+          type: "tip",
+          shade: true,
+        },
+        () => {
+          let user = QdToken.getUser();
+          user.noticeSign = systemNotice.sign;
+          QdToken.setUser(user);
+          $(".msg i").css("color", "unset");
+          $("#pugCloseBtn").trigger("click");
+        },
+        () => {}
+      );
+    });
+  }
+  // 个人设置
+  $("#editUserBtn").on("click", function () {
+    let param = {
+      nickname: $(".userInfo-nickname").eq(1).val(),
+      avatar: $(".userInfo-avatar").eq(1).val(),
+      bgimg: $(".userInfo-bgimg").eq(1).val() || "/images/bgimg_1.jpg",
+      sysFlag: parseInt($(".userInfo-sysNavSelect").eq(1).val()) || 0,
+      style: $(".userInfo-style").eq(1).val(),
+    };
+    QdAjax.post(
+      "/userInfo/update",
+      (res) => {
+        if (res.code == 200) {
+          pug.message.success(res.message);
+          // location.reload();
+        } else {
+          pug.message.error(res.message);
+        }
+      },
+      param,
+      QdToken.tokenHeader()
+    );
+  });
+
+  // 添加分栏
+  $("#addPanelBtn").on("click", function () {
+    let param = {
+      pid: 0,
+      title: $(".panel-title").eq(1).val(),
+      sort: $(".panel-sort").eq(1).val() || 0,
+      status: $(".panel-statusSelect").eq(1).val(),
+    };
+    saveOrUpdateApp(param);
+  });
+  /** 
+  QdAjax.post('/logout', res => {
+    if (res.code == 200) {
+        pug.message.success(res.message)
+        QdToken.removeToken();
+        location.reload();
+    } else { pug.message.error(res.message) }
+  }, {}, QdToken.tokenHeader())
+*/
+
+  // 链接设置
+  $("#editAppBtn").on("click", function () {
+    let param = {
+      id: $(".app-id").eq(1).val(),
+      pid: $(".app-cateSelectPid").eq(1).val(),
+      title: $(".app-title").eq(1).val(),
+      url: $(".app-url").eq(1).val(),
+      icon: $(".app-icon").eq(1).val(),
+      sort: $(".app-sort").eq(1).val() || 0,
+      status: $(".app-statusSelect").eq(1).val(),
+    };
+    saveOrUpdateApp(param);
+  });
+
+  // TODO 获取系统公告
+  function getSysMsg() {
+    QdAjax.get(
+      "/notice",
+      (res) => {
+        if (res.code == 200) {
+          let user = QdToken.getUser();
+          if (user.noticeSign == res.data.sign) {
+            return;
+          }
+          systemNotice = res.data;
+          $(".msg i").css("color", "#ff1212");
+        }
+      },
+      {},
+      QdToken.tokenHeader()
+    );
+  }
+
+  // 获取系统app
+  function loadSysAppInit() {
+    QdAjax.get("/app/list", (res) => {
+      if (res.code == 200) {
+        pug.close("loadingBox");
+        createAppDom(res.data);
+      }
+    });
+  }
+  // 保存或修改
+  function saveOrUpdateApp(param) {
+    if (validBlank(param.title)) {
+      pug.message.warn("请输入标题");
+      return;
+    }
+    QdAjax.post(
+      "/app/save",
+      (res) => {
+        if (res.code == 200) {
+          pug.message.success(res.message);
+          loadAppInit();
+        } else {
+          pug.message.error(res.message);
+        }
+      },
+      param,
+      QdToken.tokenHeader()
+    );
+  }
+
+  // 获取自定义app
+  function loadAppInit() {
+    QdAjax.get(
+      "/app/self",
+      (res) => {
+        if (res.code == 200) {
+          appArrs = res.data;
+          createAppDom(appArrs, true);
+        } else {
+          pug.message.error(res.message);
+        }
+      },
+      {},
+      QdToken.tokenHeader()
+    );
+    // // 分享
+    // shareApp = function (title,url) {
+    //   const text = `${title}: ${url}\n来源: 星域导航`;
+    //   navigator.clipboard.writeText(text);
+    //   pug.message.success("已复制到剪贴板");
+    // };
+    // 编辑
+    editApp = function (i, index) {
+      editingApp = appArrs[i].children[index];
+      $("#addNavBtn").trigger("click");
+    };
+    // 删除
+    deleteApp = function (i, index) {
+      let row = appArrs[i].children[index];
+      pug.confirm(
+        `您确定要删除${row.title}吗`,
+        "提示",
+        {},
+        () => {
+          let pid = row.pid;
+          let id = row.id;
+          QdAjax.post(
+            `/app/delete/${pid}/${id}`,
+            (res) => {
+              if (res.code == 200) {
+                pug.message.success(res.message);
+                appArrs[i].children.splice(index, 1);
+                createAppDom(appArrs, true);
+              } else {
+                pug.message.error(res.message);
+              }
+            },
+            {},
+            QdToken.tokenHeader()
+          );
+        },
+        () => {}
+      );
+    };
+  }
+  // 创建收藏dom=================
+  function createAppDom(arr, flag = false) {
+    let html = "";
+    for (let index = 0; index < arr.length; index++) {
+      const element = arr[index];
+      html += `<div class="link-box link-box${index}" index="${index}" id="toc-title-position-${index}">
+                        <div class="headline">
+                        <strong>${element.title}</strong>
+                    </div>
+                    <div class="link-list-d">
+                        <ul>
+                            ${cerateChildrenDom(element.children, index, flag)}
+                        </ul>
+                    </div>
+                </div>\n`;
+    }
+    if (flag) {
+      $("#custom_link_box").html(html);
+    } else {
+      $("#sys_link_dox").html(html);
+    }
+    // 创建子集dom========
+    function cerateChildrenDom(children, i, flag) {
+      let html = "";
+      for (let index = 0; index < children.length; index++) {
+        const element = children[index];
+        html += `<li class="link-item${index}"><a class="link-a" href="${element.url}" target="_blank">
+                        <img src="${element.icon || '../favicon.ico'}">
+                        <span>${element.title}</span></a>
+                        <span class="more">
+                          <div class="dropdown">
+                            <div class="dropdown-trigger">
+                              <svg t="1704952112289" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4211" width="1em" height="1em"><path d="M465.9 263c0-12.6 4.2-23.1 12.6-31.5s19-12.7 31.9-12.7c12.5 0 22.8 4.2 31.1 12.7s12.4 19 12.4 31.5c0 12.2-4.1 22.7-12.4 31.5s-18.6 13.2-31.1 13.2c-12.8 0-23.4-4.4-31.9-13.2s-12.6-19.3-12.6-31.5z m0 250.5c0-12.2 4.2-22.6 12.6-31s19-12.7 31.9-12.7c12.5 0 22.8 4.2 31.1 12.7s12.4 18.8 12.4 31c0 12.5-4.1 23.2-12.4 32s-18.6 13.2-31.1 13.2c-12.8 0-23.4-4.4-31.9-13.2s-12.6-19.5-12.6-32z m0 253c0-12.5 4.2-23 12.6-31.3s19-12.5 31.9-12.5c12.5 0 22.8 4.1 31.1 12.5 8.3 8.3 12.4 18.7 12.4 31.3 0 12.5-4.1 23.2-12.4 32s-18.6 13.2-31.1 13.2c-12.8 0-23.4-4.4-31.9-13.2s-12.6-19.5-12.6-32z" p-id="4212"></path></svg>
+                            </div>
+                            <div class="dropdown-menu">
+                              <ul> 
+                                <li><a onclick="shareApp('${element.title}','${element.url}')"><i class="iconfont icon-fenxiangxiao"></i>分享</a></li>
+                                ${setOptionBox(i, index, flag)}
+                              </ul>
+                            </div>
+                          </div>
+                        </span>
+                  </li>\n`;
+      }
+      return html;
+    }
+    // 设置操作栏
+    function setOptionBox(i, index, flag) {
+      if (flag) {
+        return `<li><a onclick="editApp(${i},${index})"><i class="iconfont icon-bianji1"></i>编辑</a></li>
+                <li><a onclick="deleteApp(${i},${index})"><i class="iconfont icon-shanchu"></i>删除</a></li>`;
+      } else return "";
+    }
+    // 分享
+    shareApp = function (title, url) {
+      const text = `${title}: ${url}\n来源: 星域导航`;
+      navigator.clipboard.writeText(text);
+      pug.message.success("已复制到剪贴板");
+    };
+  }
+
+  /**==设置目录=============================================================================================================================== */
+  function setAppToc(arr) {
+    let html = "";
+    for (let index = 0; index < arr.length; index++) {
+      const element = arr[index];
+      html += `<div class="item toc-item sortable" title="${element.title}">${element.title}</div>\n`;
+    }
+    $(".toc-box").html(html);
+
+    initSliderBar();
+    function initSliderBar() {
+      let scrollFlag = true;
+      let scrollFlagtimer = null;
+      $(".elevator").find(".toc-item").eq(0).addClass("on");
+      $(".elevator").find(".toc-item").on("click", function () {
+          scrollFlag = false;
+          let index = $(this).index();
+          $(".elevator").find(".toc-item").removeClass("on");
+          $(this).addClass("on");
+          if (index == 0) $(".elevator").find(".toc-item").eq(0).addClass("on");
+          let ctop = $("#toc-title-position-" + (index)).offset().top - 200;
+          $('html,body').stop(true).animate({scrollTop: ctop}, 200);
+          if (scrollFlagtimer) clearTimeout(scrollFlagtimer);
+            scrollFlagtimer = setTimeout(function () {
+              scrollFlag = true;
+          }, 1000);
+      })
+
+      $(window).on("scroll", function () {
+          if (!scrollFlag) return;
+          let vtop = $(this).scrollTop();
+          let client = $(this).height();
+          let scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+          if (scrollHeight > 100) {
+            $("#keywords").hide();
+          }
+          if (vtop > 200) {
+              $(".elevator").show();
+              let arr = [];
+              $(".link-box").each(function () {
+                let stop = $(this).offset().top - 100;
+                  if (stop <= vtop) {
+                    let index = $(this).attr("index");
+                      arr[0] = index;
+                  }
+              });
+
+              $(".elevator").find(".toc-item").removeClass("on");
+
+              if (vtop + client == scrollHeight) {
+                  $(".elevator").find(".toc-item:last-child").addClass("on");
+              } else {
+                  $(".elevator").find(".toc-item").eq(arr[0]).addClass("on");
+              }
+          } else {
+              $(".elevator").find(".toc-item").removeClass("on");
+              $(".elevator").hide();
+          }
+      })
+    }
+
+    // 回到顶部
+    $(".back-top").on("click", function () {
+      document.documentElement.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    });
+
+  }
+
+  /**==加载自定义样式=============================================================================================================================== */
+  function includeStyleElement(styles) {
+    let style = document.createElement("style");
+    (document.getElementsByTagName("head")[0] || document.body).appendChild(style);
+    if (style.styleSheet) {
+      //for ie
+      style.styleSheet.cssText = styles;
+    } else {
+      //for w3c
+      style.appendChild(document.createTextNode(styles));
+    }
+  }
+});

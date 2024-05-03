@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>星域导航 - 连接世界，探索无限</title><meta name="keywords" content="导航,星域导航,资源网站,上网导航,网址导航,网站导航,网址大全,好的网站,上网主页" /><meta name="description" content="星域导航是一个资源导航网站,主要分享一些精品网站和实用软件，汇集全网优质网址，提供简单便捷的上网导航服务。" /><meta property="og:type" content="article"><meta property="og:url" content="https://qdstudy.gitee.io/"/><meta name="referrer" content="always"><link rel="shortcut icon" href="https://qdstudy.gitee.io/favicon.ico" type="image/x-icon"><link href="../lib/pug-ui/css/animate.min.css" rel="stylesheet"><link href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" rel="stylesheet"><link rel="stylesheet" href="../lib/pug-ui/css/pug.css"><link rel="stylesheet" href="../css/style.css">
+	<!--百度统计--><script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?58856e21994b2201e22567d60aee53a9";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script><!--灵雀应用监控错误统计--><script type="text/javascript"src="https://js.users.51.la/21840947.js"></script><script src="https://sdk.51.la/perf/js-sdk-perf.min.js"crossorigin="anonymous"></script><script>new LingQue.Monitor().init({id:"3HBESEldCtzbD7HI",sendSuspicious:true});</script>
+</head>
+
+<body>
+
+	<nav class="header">
+		<div class="pug-container header-wrapper">
+			<img class="logo" src="../favicon.ico">
+			<li><span class="yulu"></span></li>
+			<div class="nav-user-wraper">
+				<button class="pug-btn pug-btn-sm pug-btn-primary" id="lxzz">交流 反馈</button>
+			</div>
+		</div>
+	</nav>
+
+	<main class="pug-container oh">
+		<div class="app-search-wrapper pr">
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <div class="search-box">
+                    <input type="text" class="wd" autocomplete="off" name="wd" autofocus="autofocus" placeholder="请输入搜索内容">
+                    <button type="submit">搜索</button>
+                </div>
+            </form>
+            <div id="keywords"></div>
+        </div>
+
+		<div class="app-link-wrapper" style="margin: 30px 0;">
+			<!-- 常用应用 -->
+			<div id="app-link_box">
+				<div class="link-box">
+					<div class="headline"><strong>应用</strong></div>
+					<div class="link-list-d">
+						<ul><li class="li-often animate__animated animate__bounceIn"><a class="link-btn" href="https://www.bilibili.com/" target="_blank"><span class="iconbox"><i class="bi bi-tv-fill"></i></span><p>哔哩哔哩</p></a></li><li class="li-often animate__animated animate__bounceIn"><a class="link-btn" href="https://music.163.com/#/my/m/music/playlist?id=963538401" target="_blank"><span class="iconbox"><i class="bi bi-music-note-list"></i></span><p>网易云音乐</p></a></li><li class="li-often animate__animated animate__bounceIn"><a class="link-btn" href="https://www.cbportal.org/" target="_blank"><span class="iconbox"><i class="bi bi-play-circle-fill"></i></span><p>茶杯狐影视</p></a></li><li class="li-often animate__animated animate__bounceIn"><a class="link-btn" href="https://tophub.today/" target="_blank"><span class="iconbox"><i class="bi bi-wechat"></i></span><p>今日热榜</p></a></li><li class="li-often animate__animated animate__bounceIn"><a class="link-btn" href="https://www.ghxi.com/" target="_blank"><span class="iconbox"><i class="bi bi-box-fill"></i></span><p>果核剥壳</p></a></li><li class="li-often animate__animated animate__bounceIn"><a class="link-btn" href="https://yiso.fun/" target="_blank"><span class="iconbox"><i class="bi bi-browser-chrome"></i></span><p>资源搜索</p></a></li><li class="li-often animate__animated animate__bounceIn"><a class="link-btn" id="setLink" href="javascript:void(0);"><span class="iconbox"><i class="bi bi-bag-plus-fill"></i></span><p>添加链接</p></a></li><li class="li-often animate__animated animate__bounceIn"><a class="link-btn" id="setStyle" href="javascript:void(0);"><span class="iconbox"><i class="bi bi-gear-fill"></i></span><p>自定义样式</p></a></li></ul>
+					</div>
+				</div>
+			</div>
+			<!-- 站长推荐 -->
+			<div id="sys_link_dox"></div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="pug-container">
+			<p class="copyright">
+				<span>Copyright © <a href="http://wpa.qq.com/msgrd?v=3&uin=2013498006&site=qq&menu=yes" target="_blank">前度</a></span>
+			</p>
+		</div>
+	</footer>
+
+	<!-- 置顶 -->
+	<div class="top-wrapper">
+		<a id="top">
+			<svg t="1662099218630" class="icon" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="12574" width="35" height="35">
+				<path d="M470.016 976.896q-44.032 0-59.392-20.48t-15.36-65.536q0-20.48-0.512-64.512t-1.024-93.696-1.536-96.768-1.024-74.752q0-39.936-7.68-62.464t-35.328-21.504q-20.48 0-48.64-1.024t-49.664 0q-35.84 0-45.568-19.456t13.824-50.176q24.576-30.72 57.344-72.704t67.584-86.016 68.096-87.04 58.88-75.776q23.552-29.696 45.568-30.72t46.592 26.624q24.576 29.696 56.832 69.632t67.072 82.432 68.608 83.968 60.416 73.216q29.696 35.84 23.04 58.88t-43.52 23.04q-11.264 0-25.088 0.512t-29.184 1.024-30.208 1.024-27.136 0.512q-25.6 1.024-32.256 16.384t-5.632 41.984q0 29.696 0.512 77.824t1.024 100.352 1.536 101.376 1.024 79.872q0 13.312-2.048 27.648t-9.728 26.112-21.504 19.968-36.352 8.192q-27.648 0-52.736 0.512t-56.832 1.536z" p-id="12575" fill="#1296db"></path>
+			</svg>
+		</a>
+	</div>
+
+	<script src="../lib/pug-ui/js/jquery-3.1.0.min.js"></script><script src="../lib/pug-ui/js/pug.js"></script><script src="../js/index.js"></script><script src="../js/old.js"></script>
+
+</body>
+
+</html>
