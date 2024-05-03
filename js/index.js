@@ -25,7 +25,9 @@ $(function () {
         { title: "韩剧看看", url: "https://www.hanjukankan.com/", icon: "https://www.hanjukankan.com/templets/default2022/images/img/logo_s.png" },
         { title: "小静儿影视", url: "https://xiaojinger.cc/", icon: "https://xiaojinger.cc/static/ds3/img/favicon.png" },
         { title: "03影院", url: "https://www.03yy.co/", icon: "https://www.03yy.co/favicon.ico" },
-        // { title: "爱短剧", url: "https://aiduanju.vip", icon: "https://aiduanju.vip/upload/mxcms/20231219-1/44f90b0982aba955dfcc5675b89b47b9.png" },
+        { title: "魔王短剧", url: "https://www.mowangduanju.cn/vod/type/id/5.html", icon: "https://www.mowangduanju.cn/template/mxone/mxstatic/picture/logo.png" },
+        { title: "异类影视", url: "http://www.yswsh.cn/vodtype/5.html", icon: "https://s21.ax1x.com/2024/03/24/pFhX7Yn.png" },
+        
 
 
 
