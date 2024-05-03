@@ -106,6 +106,7 @@ $(function () {
           url: "https://mp.weixin.qq.com/s?__biz=MzIzNDUxNzUzNw==&mid=2247559735&idx=1&sn=2b099655c5a4051c576b6c9f2d5a2ec0",
           icon: "https://mp.weixin.qq.com/favicon.ico" 
         },
+        { title: "油猴脚本", url: "https://greasyfork.org/zh-CN", icon: "https://greasyfork.org/vite/assets/blacklogo16-37ZGLlXh.png" },
         { title: "osssr", url: "https://www.osssr.com", icon: "https://www.osssr.com/favicon.ico" },
         { title: "易搜", url: "https://yiso.fun/", icon: "https://yiso.fun/static/img/logo.png" },
         { title: "小纸条", url: "https://ali.gitcafe.ink/", icon: "https://fuliba123.net/wp-content/uploads/2024/01/81331-ali.gitcafe.ink.png" },
