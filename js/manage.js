@@ -43,9 +43,9 @@ new Vue({
       this.text = content;
     },
     setIconHandler(){
-      if(!this.validBlank(this.form.url)){
-        this.form.icon = this.getSubstr(this.form.url);
-      }
+      // if(!this.validBlank(this.form.url)){
+      //   this.form.icon = this.getSubstr(this.form.url);
+      // }
     },
     copyLinkHandler(){
       if(!this.validBlank(this.text)){
