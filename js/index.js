@@ -54,7 +54,6 @@ $(function () {
         { title: "丁香园用药助手", url: "https://drugs.dxy.cn/", icon: "https://drugs.dxy.cn/pc/imgs/logo-icon.png" },
         { title: "下厨房", url: "https://www.xiachufang.com/", icon: "https://s.chuimg.com/favicon.ico" },
         { title: "猫眼票房", url: "https://piaofang.maoyan.com/dashboard", icon: "https://obj.pipi.cn/festatic/piaofang/moviepro/favicon.ico" },
-        { title: "宜家家居灵感", url: "https://www.ikea.cn/cn/zh/ideas/", icon: "https://static.web.ikea.cn/static/favicon.ico" },
         { title: "意林在线", url: "http://qikan.lifves.com/", icon: "https://www.lifves.com/favicon.ico" },
 
 
@@ -75,6 +74,7 @@ $(function () {
         { title: "金山文档", url: "https://www.kdocs.cn/latest?from=docs", icon: "https://account.wps.cn/favicon.ico" },
         { title: "文叔叔快传", url: "https://www.wenshushu.cn/", icon: "https://www.wenshushu.cn/favicon.ico" },
         { title: "微信传输助手", url: "https://filehelper.weixin.qq.com/", icon: "https://mp.weixin.qq.com/favicon.ico" },
+        { title: "百度翻译", url: "https://fanyi.baidu.com/#zh/en/", icon: "https://fanyi.baidu.com/favicon.ico" },
         { title: "帮小忙", url: "https://tool.browser.qq.com/", icon: "https://tool.browser.qq.com/favicon.ico" },
         { title: "老鱼简历", url: "https://www.laoyujianli.com/", icon: "https://www.laoyujianli.com/favicon.ico" },
         { title: "表情包大全", url: "https://www.dbbqb.com/", icon: "https://www.dbbqb.com/favicon.ico" },
@@ -109,9 +109,13 @@ $(function () {
         { title: "osssr", url: "https://www.osssr.com", icon: "https://www.osssr.com/favicon.ico" },
         { title: "易搜", url: "https://yiso.fun/", icon: "https://yiso.fun/static/img/logo.png" },
         { title: "小纸条", url: "https://ali.gitcafe.ink/", icon: "https://fuliba123.net/wp-content/uploads/2024/01/81331-ali.gitcafe.ink.png" },
-        { title: "云盘资源分享", url: "https://yunpan1.cc/", icon: "" },
+        { title: "云盘资源分享", url: "https://yunpan1.cc/", icon: "https://yunpan1.cc/assets/favicon-csp4qulv.png" },
         { title: "框框大学", url: "https://www.kkdaxue.com/", icon: "https://www.kkdaxue.com/favicon.ico" },
         { title: "磁力预览", url: "https://pics.magnetq.com/", icon: "https://pics.magnetq.com/static/images/apple-touch-icon.png" },
+
+        { title: "BOSS直聘", url: "https://www.zhipin.com/suzhou/?ka=query_select_city_101190400", icon: "https://www.zhipin.com/favicon.ico" },
+        { title: "智联招聘", url: "https://www.zhaopin.com/", icon: "//common-bucket.zhaopin.cn/img/favicon/favicon-2011.ico" },
+        { title: "前程无忧", url: "https://www.51job.com", icon: "https://img04.51jobcdn.com/im/mkt/pc/favicon/favicon_51.ico?20221122" },
 
       ],
     },
