@@ -38,6 +38,7 @@
       footer{background: transparent;margin-top: 0;}
       html{height: auto;}
       body{display: block;height: auto;}
+      button{margin: 2px 0;}
       }</style>
     <style>
       
@@ -91,12 +92,17 @@
             <a-button size="" icon="copy" slot="extra" @click="copyLinkHandler">
               点我复制
             </a-button>
-            <a-textarea :rows="4" v-model="text" />
+            <a-textarea :rows="3" v-model="text" />
           </a-card>
           <a-card size="small" title="网站源码">
-            <a-button size="" icon="bug" slot="extra" @click="getZiYuanHandler">
-              开始解析
-            </a-button>
+             <span slot="extra">
+              <a-button size="" icon="redo" @click="clearZiYuanHandler">
+                清空
+              </a-button>
+              <a-button size="" icon="bug" @click="getZiYuanHandler">
+                解析
+              </a-button>
+            </span>
             <a-textarea :rows="5" v-model="yuanma" />
           </a-card>
     </main>
