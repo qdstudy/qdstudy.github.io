@@ -67,7 +67,7 @@ $(function () {
         { title: "文叔叔快传", url: "https://www.wenshushu.cn/", icon: "https://www.wenshushu.cn/favicon.ico" },
         { title: "微信传输助手", url: "https://filehelper.weixin.qq.com/", icon: "https://mp.weixin.qq.com/favicon.ico" },
         { title: "帮小忙", url: "https://tool.browser.qq.com/", icon: "https://tool.browser.qq.com/favicon.ico" },
-        { title: "极简简历", url: "https://www.polebrief.com/index", icon: "https://www.polebrief.com/favicon.ico" },
+        { title: "老鱼简历", url: "https://www.laoyujianli.com/", icon: "https://www.laoyujianli.com/favicon.ico" },
         { title: "表情包大全", url: "https://www.dbbqb.com/", icon: "https://www.dbbqb.com/favicon.ico" },
         { title: "在线P图", url: "https://www.meishuzi.cn/size", icon: "https://www.meishuzi.cn/favicon.ico" },
         //{ title: "工具猫", url: "https://www.toolscat.com/img/ico", icon: "https://www.toolscat.com/static/common/favicon.ico" },
