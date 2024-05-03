@@ -43,9 +43,9 @@ new Vue({
       this.text = content;
     },
     setIconHandler(){
-      // if(!this.validBlank(this.form.url)){
-      //   this.form.icon = this.getSubstr(this.form.url);
-      // }
+      if(!this.validBlank(this.form.url)){
+        this.form.icon = this.getSubstr(this.form.url);
+      }
     },
     copyLinkHandler(){
       if(!this.validBlank(this.text)){
@@ -71,8 +71,8 @@ new Vue({
           this.form.icon = shortIcon;
         }
         // 解析链接
-        const ogUrlMeta = htmlDocument.querySelector('meta[property="og:url"]');
-        this.form.url = ogUrlMeta ? ogUrlMeta.getAttribute('content') : '';
+        // const ogUrlMeta = htmlDocument.querySelector('meta[property="og:url"]');
+        // this.form.url = ogUrlMeta ? ogUrlMeta.getAttribute('content') : '';
 
     },
     setDefaultIconHandler(){
