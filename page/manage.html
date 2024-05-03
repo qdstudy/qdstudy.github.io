@@ -78,17 +78,11 @@
               <a-input addon-before="icon" allow-clear v-model="form.icon" />
             </div>
             <div>
-              <a-button type="primary">
-                1、解析
-              </a-button>
-              <a-button type="primary">
-                2、匹配图标
-              </a-button>
               <a-button type="primary" @click="setDefaultIconHandler">
-                3、默认图标
+                1、默认图标
               </a-button>
               <a-button type="primary" @click="createLinkHandler">
-                4、生成
+                2、生成
               </a-button>
               <img class="icon-img" :src="form.icon" />
             </div>
