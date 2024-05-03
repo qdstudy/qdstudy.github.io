@@ -76,7 +76,7 @@ new Vue({
 
     },
     setDefaultIconHandler(){
-      this.form.icon = "/favicon.ico";
+      this.form.icon = "/web/favicon.ico";
     },
     validBlank(str) {
       return str === "" || str === "undefined" || str == undefined;
