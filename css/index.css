@@ -96,7 +96,7 @@ footer a:hover{color:#242426;text-decoration: none;}
 .top-wrapper{height:45px;width:45px;position:fixed;bottom:42px;right:8px;cursor:pointer;user-select:none;z-index:5;display:none}
 /* mobile */
 @media screen and (max-width: 600px) {
-nav.header .yulu{display: none;}
+/* nav.header .yulu{display: none;} */
 main{flex: none;}
 .note-view-body main{padding:0 6px !important}
 nav.header .user-option-wrapper{right: -4px;}
