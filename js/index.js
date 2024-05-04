@@ -110,7 +110,7 @@ $(function () {
         { title: "osssr", url: "https://www.osssr.com", icon: "https://www.osssr.com/favicon.ico" },
         { title: "易搜", url: "https://yiso.fun/", icon: "https://yiso.fun/static/img/logo.png" },
         { title: "小纸条", url: "https://ali.gitcafe.ink/", icon: "https://fuliba123.net/wp-content/uploads/2024/01/81331-ali.gitcafe.ink.png" },
-        { title: "云盘资源分享", url: "https://yunpan1.cc/", icon: "https://yunpan1.cc/assets/favicon-csp4qulv.png" },
+        { title: "云盘资源分享", url: "https://yunpan1.cc/", icon: "/web/favicon.ico" },
         { title: "框框大学", url: "https://www.kkdaxue.com/", icon: "https://www.kkdaxue.com/favicon.ico" },
         { title: "磁力预览", url: "https://pics.magnetq.com/", icon: "https://pics.magnetq.com/static/images/apple-touch-icon.png" },
 
@@ -128,6 +128,7 @@ $(function () {
         { title: "excalidraw", url: "https://excalidraw.com/", icon: "https://excalidraw.com/favicon.ico" },
         { title: "嘉立创EDA", url: "https://u.lceda.cn/account/user/projects/all", icon: "https://u.lceda.cn/favicon.ico" },
         { title: "PS在线", url: "https://www.photopea.com/", icon: "https://www.photopea.com/promo/icon512.png" },
+        { title: "AI绘画", url: "https://www.bilibili.com/read/cv22159609/", icon: "https://ideaiai.com/favicon.ico" },
       ],
     },
     {
@@ -181,7 +182,6 @@ $(function () {
         { title: "bootCDN", url: "https://www.bootcdn.cn/", icon: "https://www.bootcdn.cn/assets/ico/favicon.ico" },
         { title: "LeetCode", url: "https://leetcode.cn/problemset/", icon: "https://leetcode.cn/favicon.ico" },
         { title: "api", url: "https://api.aa1.cn/", icon: "https://api.aa1.cn/favicon.ico" },
-        { title: "ngrok", url: "https://dashboard.ngrok.com/", icon: "https://ngrok.com/static/favicon.ico" },
         { title: "UnCSS", url: "https://uncss-online.com/", icon: "https://uncss-online.com/static/img/favicon.ico" },
         {
           title: "色彩表",
