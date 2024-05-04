@@ -11,7 +11,7 @@ $(function () {
     beforeLoginBoxInit();
     function beforeLoginBoxInit() {
         $(".app-search-wrapper").css("background", "url(/web/images/bgimg_1.jpg)");
-        $("nav .nav-user-wraper").html(`<button class="pug-btn pug-btn-sm pug-btn-primary" id="login">登录 / 注册</button>\n`);
+        $("nav .nav-user-wraper").html(`<button class="pug-btn pug-btn-sm pug-btn-primary" id="login">资源投稿</button>\n`);
         // 获取系统导航
         // pug.close("loadingBox");
         // $("#login").prop("disabled", true);
