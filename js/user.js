@@ -24,7 +24,8 @@ $(function () {
         setAppToc(SERVR_FAIL_DEFAULT_APPS);
         // 登录注册
         $("#login").on("click", function () {
-            loginBoxInit();
+            // loginBoxInit();
+            window.open('https://support.qq.com/products/514070/faqs-more?id=154890', '_blank');
         });
     }
     /**===登录窗口初始化================================================================================================================================================== */
