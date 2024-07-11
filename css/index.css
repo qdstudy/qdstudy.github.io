@@ -113,6 +113,7 @@ nav.header .nav-user-wraper button{padding: 0 6px;}
 .app-link-wrapper #custom_link_box .link-list-d li,.app-link-wrapper #sys_link_dox .link-list-d li{width:calc(100% / 3 - 30px)}
 .app-search-wrapper{height: unset;}
 .app-search-wrapper .app-slogan{font-size: 25px;}
+.nav-user-wraper{display: none;}
 }
 
 .yulu{text-align:center;font-size:15px;margin:20px 0 0 0;color:#8c888b;text-align:center !important;background:-webkit-linear-gradient(
