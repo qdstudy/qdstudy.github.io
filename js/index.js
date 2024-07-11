@@ -25,7 +25,7 @@ $(function () {
         { title: "小静儿影视", url: "https://xiaojinger.cc/", icon: "https://xiaojinger.cc/static/ds3/img/favicon.png" },
         { title: "03影院", url: "https://www.03yy.co/", icon: "https://www.03yy.co/favicon.ico" },
         { title: "看看屋影视", url: "https://www.kkw300.com/", icon: "https://www.kkw300.com/favicon.ico" },
-        { title: "追剧FreeOK ", url: "https://www.freeok.me/", icon: "/web/favicon.ico" },
+        { title: "追剧FreeOK ", url: "https://www.freeok.me/", icon: "/favicon.ico" },
         { title: "共青春影院", url: "https://gqc.ink/", icon: "https://gqc.ink/favicon.ico" },
 
         
@@ -82,7 +82,7 @@ $(function () {
         //{ title: "工具猫", url: "https://www.toolscat.com/img/ico", icon: "https://www.toolscat.com/static/common/favicon.ico" },
         { title: "无水印解析", url: "https://dlpanda.com/zh-CN", icon: "https://dlpanda.com/favicon.ico" },
         { title: "哔哩哔哩视频解析", url: "https://snapany.com/zh/bilibili", icon: "https://snapany.com/favicon.ico" },
-        { title: "B站视频下载", url: "https://zhouql.vip/bilibili/", icon: "/web/favicon.ico" },
+        { title: "B站视频下载", url: "https://zhouql.vip/bilibili/", icon: "/favicon.ico" },
         { title: "m3u8 视频下载", 
           url: "https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html",
           icon: "https://fuliba123.net/wp-content/uploads/2024/01/d03c3-blog.luckly-mjw.cn.png" },
@@ -110,7 +110,7 @@ $(function () {
         { title: "osssr", url: "https://www.osssr.com", icon: "https://www.osssr.com/favicon.ico" },
         { title: "易搜", url: "https://yiso.fun/", icon: "https://yiso.fun/static/img/logo.png" },
         { title: "小纸条", url: "https://ali.gitcafe.ink/", icon: "https://fuliba123.net/wp-content/uploads/2024/01/81331-ali.gitcafe.ink.png" },
-        { title: "云盘资源分享", url: "https://yunpan1.cc/", icon: "/web/favicon.ico" },
+        { title: "云盘资源分享", url: "https://yunpan1.cc/", icon: "/favicon.ico" },
         { title: "框框大学", url: "https://www.kkdaxue.com/", icon: "https://www.kkdaxue.com/favicon.ico" },
         { title: "磁力预览", url: "https://pics.magnetq.com/", icon: "https://pics.magnetq.com/static/images/apple-touch-icon.png" },
 
@@ -172,6 +172,7 @@ $(function () {
         },
         { title: "七牛云", url: "https://sso.qiniu.com/", icon: "https://qiniu.com/favicon.ico"},
         { title: "gitee", url: "https://gitee.com/", icon: "https://gitee.com/favicon.ico" },
+        { title: "gitub", url: "https://github.com/", icon: "https://github.com/favicon.ico" },
         {
           title: "docker仓库",
           url: "https://cr.console.aliyun.com/",
@@ -217,7 +218,7 @@ $(function () {
         },
         { title: "微信支付", url: "https://pay.weixin.qq.com/index.php/", icon: "https://wx.gtimg.com/core/favicon.ico" },
         { title: "uniapp", url: "https://uniapp.dcloud.net.cn/", icon: "https://unicloud.dcloud.net.cn/favicon.ico" },
-        { title: "飞书文档", url: "https://vvan7v9l4y8.feishu.cn/drive/home/", icon: "https://lf-scm-cn.feishucdn.com/ccm/pc/web/resource/bear/feishu.ico" },
+        { title: "飞书文档", url: "https://vvan7v9l4y8.feishu.cn/drive/home/", icon: "https://lf-scm-cn.feishucdn.com/ccm/pc/resource/bear/feishu.ico" },
         { title: "csdn", url: "https://blog.csdn.net/qd2013498006", icon: "https://www.csdn.net/favicon.ico" },
         {
           title: "Ant Design Vue",
