@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>星域导航 - 用户管理</title>
+    <meta name="keywords" content="导航,星域导航,资源网站,上网导航,网址导航,网站导航,网址大全,好的网站,上网主页" />
+    <meta name="description" content="星域导航是一个资源导航网站,主要分享一些精品网站和实用软件，汇集全网优质网址，提供简单便捷的上网导航服务。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://qdstudy.github.io/" />
+    <meta name="referrer" content="always" />
+    <link rel="shortcut icon" href="https://qdstudy.github.io/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../lib/pug-ui/css/pug.css" />
+    <script src="../lib/pug-ui/js/jquery-3.1.0.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.2/vue.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/ant-design-vue/1.7.2/antd.min.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/ant-design-vue/1.7.2/antd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cheerio"></script>
+    <script src="../js/clipboard.min.js"></script>
+    <style>html{height:100%}
+      body{display:flex;flex-direction:column;height:100%;background: #eff3f5;}
+      main{margin-top: 55px !important;flex: 1 0 auto;}
+      /* index--app */
+      nav.header{width:100%;height:50px;background:#fff;box-shadow:0 0 2px 3px #eee;position:fixed;top:0;vertical-align:middle;z-index:5;user-select:none}
+      nav.header .header-wrapper{line-height:50px}
+      nav.header .logo{vertical-align:middle;cursor:pointer;width:25px;height:25px;margin-left: 1px;display: inline-block;background-size: cover !important;}
+      nav.header li{margin:0 10px;display:inline;}
+      nav.header li span{font-weight: 553;outline: medium none;font-size: 14px;}
+      /* footer */
+      footer{margin-top:30px;background:#fff;color:#444;font-size:13px;padding-bottom:20px}
+      footer .copyright{text-align:center;color:#666;font-size:12px;margin-top:15px}
+      /* mobile */
+      @media screen and (max-width: 600px) {
+      main{flex: none;}
+      nav.header li{margin: 0;}
+      footer{background: transparent;margin-top: 0;}
+      html{height: auto;}
+      body{display: block;height: auto;}
+      button{margin: 2px 0;}
+      }</style>
+    <style>
+      
+        [v-cloak]{
+            display: none
+        }
+        .ant-btn-primary{margin-right: 5px;}
+        .ant-card{margin: 3px;}
+        .icon-img{ vertical-align: bottom;
+                background: #ccc;
+                width: 32px;
+                height: 32px;
+                line-height: 32px;border-radius: 4px;
+        }
+        img.icon-img[src=""],img.icon-img:not([src]){
+          opacity:0;
+        }
+    </style>
+  </head>
+
+  <body style="background: #f2f2ff;">
+    <nav class="header">
+      <div class="pug-container header-wrapper">
+        <img class="logo" src="../favicon.ico" />
+        <li><span>资源添加中心</span></li>
+      </div>
+    </nav>
+
+    <main class="pug-container oh" id="app" v-clock>
+          <a-card>
+            <div style="margin-bottom: 16px">
+              <a-input addon-before="url" allow-clear v-model="form.url" @blur="setIconHandler"/>
+            </div>
+            <div style="margin-bottom: 16px">
+              <a-input addon-before="title" allow-clear v-model="form.title" />
+            </div>
+            <div style="margin-bottom: 16px">
+              <a-input addon-before="icon" allow-clear v-model="form.icon" />
+            </div>
+            <div>
+              <a-button type="primary" @click="setDefaultIconHandler">
+                1、默认图标
+              </a-button>
+              <a-button type="primary" @click="createLinkHandler">
+                2、生成
+              </a-button>
+              <img class="icon-img" :src="form.icon" />
+            </div>
+          </a-card>
+          <a-card title="生成结果" size="small">
+            <a-button size="" icon="copy" slot="extra" @click="copyLinkHandler">
+              点我复制
+            </a-button>
+            <a-textarea :rows="3" v-model="text" />
+          </a-card>
+          <a-card size="small" title="网站源码">
+             <span slot="extra">
+              <a-button size="" icon="redo" @click="clearZiYuanHandler">
+                清空
+              </a-button>
+              <a-button size="" icon="bug" @click="getZiYuanHandler">
+                解析
+              </a-button>
+            </span>
+            <a-textarea :rows="5" v-model="yuanma" />
+          </a-card>
+    </main>
+
+
+    <footer style="padding-bottom: unset;background: transparent;">
+      <div class="pug-container">
+        <p class="copyright">
+          <span>Copyright © <a href="http://wpa.qq.com/msgrd?v=3&uin=2013498006&site=qq&menu=yes" target="_blank">前度</a></span>
+        </p>
+      </div>
+    </footer>
+    <script src="../js/manage.js"></script>
+  </body>
+</html>
