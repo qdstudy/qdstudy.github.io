@@ -194,6 +194,11 @@ $(function () {
           url: "https://www.iconfont.cn/",
           icon: "https://img.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico"
         },
+        {
+          title: "yesicon",
+          url: "https://yesicon.app/",
+          icon: "https://yesicon.app/favicon.svg"
+        },
         { title: "animate", url: "https://animate.style/", icon: "https://animate.style/img/favicon.ico" },
         {
           title: "gradient",
