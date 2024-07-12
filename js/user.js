@@ -11,7 +11,7 @@ $(function () {
     beforeLoginBoxInit();
     function beforeLoginBoxInit() {
         $(".app-search-wrapper").css("background", "url(/images/bgimg_2.jpg)");
-        $("nav .nav-user-wraper").html(`<button class="pug-btn pug-btn-sm pug-btn-primary" id="login">资源投稿</button>\n`);
+        $("nav .nav-user-wraper").html(`<button class="pug-btn pug-btn-sm pug-btn-primary" id="login">登录/注册</button>\n`);
         // 获取系统导航
         // pug.close("loadingBox");
         // $("#login").prop("disabled", true);
@@ -24,8 +24,8 @@ $(function () {
         setAppToc(SERVR_FAIL_DEFAULT_APPS);
         // 登录注册
         $("#login").on("click", function () {
-            // loginBoxInit();
-            window.open('https://support.qq.com/products/514070/faqs-more?id=154890', '_blank');
+            loginBoxInit();
+            // window.open('https://support.qq.com/products/514070/faqs-more?id=154890', '_blank');
         });
     }
     /**===登录窗口初始化================================================================================================================================================== */
