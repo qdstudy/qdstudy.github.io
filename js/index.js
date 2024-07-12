@@ -17,28 +17,15 @@ $(function () {
           icon: "https://lf1-cdn-tos.bytegoofy.com/goofy/ies/douyin_web/public/favicon.ico"
         },
         { title: "央视网", url: "https://tv.cctv.com/live/cctv1", icon: "https://tv.cctv.com/favicon.ico" },
-        { title: "电影狗", url: "https://www.dianyinggou.com/", icon: "https://www.dianyinggou.com/favicon.ico" },
+        { title: "电影狗", url: "http://www.dianyinggou.com/", icon: "http://www.dianyinggou.com/favicon.ico" },
         { title: "高清影视", url: "https://1080zyk6.com/", icon: "https://1080zyk6.com/favicon.ico" },
         { title: "牛牛影视", url: "https://www.niutv.top/", icon: "https://www.niutv.top/template/mxone/mxstatic/picture/logo.png" },
-        // { title: "饭团影视", url: "https://tuan.fan/", icon: "https://tuan.fan/upload/mxcms/20240121-1/b8254990bf86fa121b1106659246bad9.png" },
         { title: "爱看剧", url: "https://www.ikanju.cc//", icon: "https://www.ikanju.cc/static/ds3/img/favicon.png" },
         { title: "小静儿影视", url: "https://xiaojinger.cc/", icon: "https://xiaojinger.cc/static/ds3/img/favicon.png" },
         { title: "03影院", url: "https://www.03yy.co/", icon: "https://www.03yy.co/favicon.ico" },
-        { title: "看看屋影视", url: "https://www.kkw300.com/", icon: "https://www.kkw300.com/favicon.ico" },
-        { title: "追剧FreeOK ", url: "https://www.freeok.me/", icon: "/favicon.ico" },
         { title: "共青春影院", url: "https://gqc.ink/", icon: "https://gqc.ink/favicon.ico" },
-
-        
         { title: "韩剧看看", url: "https://www.hanjukankan.com/", icon: "https://www.hanjukankan.com/templets/default2022/images/img/logo_s.png" },
-        { title: "日剧网", url: "https://www.dn51.net/", icon: "https://www.dn51.net/favicon.ico" },
-        { title: "泰剧网", url: "https://www.tttaiju.cc/", icon: "https://www.tttaiju.cc/favicon.ico" },
-        { title: "魔王短剧", url: "https://www.mowangduanju.cn/vod/type/id/5.html", icon: "https://www.mowangduanju.cn/template/mxone/mxstatic/picture/logo.png" },
-        { title: "异类短剧", url: "http://www.yswsh.cn/vodtype/5.html", icon: "https://s21.ax1x.com/2024/03/24/pFhX7Yn.png" },
-        { title: "短剧", url: "https://jiaoyu01.com/vodtype/5.html", icon: "https://jiaoyu01.com/upload/mxcms/20240414-1/e077439f88f1259406871687a67fa4ff.png" },
         
-
-
-
 
       ],
     },
@@ -57,15 +44,6 @@ $(function () {
         { title: "意林在线", url: "http://qikan.lifves.com/", icon: "https://www.lifves.com/favicon.ico" },
 
 
-
-
-
-
-
-
-
-
-
       ],
     },
     {
@@ -79,7 +57,6 @@ $(function () {
         { title: "老鱼简历", url: "https://www.laoyujianli.com/", icon: "https://www.laoyujianli.com/favicon.ico" },
         { title: "表情包大全", url: "https://www.dbbqb.com/", icon: "https://www.dbbqb.com/favicon.ico" },
         { title: "在线P图", url: "https://www.meishuzi.cn/size", icon: "https://www.meishuzi.cn/favicon.ico" },
-        //{ title: "工具猫", url: "https://www.toolscat.com/img/ico", icon: "https://www.toolscat.com/static/common/favicon.ico" },
         { title: "无水印解析", url: "https://dlpanda.com/zh-CN", icon: "https://dlpanda.com/favicon.ico" },
         { title: "哔哩哔哩视频解析", url: "https://snapany.com/zh/bilibili", icon: "https://snapany.com/favicon.ico" },
         { title: "B站视频下载", url: "https://zhouql.vip/bilibili/", icon: "/favicon.ico" },
@@ -88,7 +65,6 @@ $(function () {
           icon: "https://fuliba123.net/wp-content/uploads/2024/01/d03c3-blog.luckly-mjw.cn.png" },
         { title: "PDF派", url: "https://www.pdfpai.com/", icon: "https://www.pdfpai.com/statics/images/favicon.ico" },
         { title: "爱PPT", url: "https://www.2ppt.com/", icon: "https://www.2ppt.com/favicon.ico" },
-        { title: "即时工具", url: "https://www.67tool.com/", icon: "https://www.67tool.com/favicon.ico" },
         { title: "百家姓加密", url: "https://www.bjxah.com/", icon: "https://api.iowen.cn/favicon/c.p2hp.com.png" },
         { title: "蓝奏网盘", url: "https://pc.woozooo.com/mydisk.php", icon: "https://pc.woozooo.com/favicon.ico" },
       ],
@@ -97,7 +73,7 @@ $(function () {
       title: "资源",
       children: [
         { 
-          title: "前度工具分享", 
+          title: "工具箱- 7h3s", 
           url: "https://www.alipan.com/s/ZG1bU6brmha", 
           icon: "https://img.alicdn.com/imgextra/i1/O1CN01JDQCi21Dc8EfbRwvF_!!6000000000236-73-tps-64-64.ico" 
         },
@@ -109,13 +85,8 @@ $(function () {
         { title: "油猴脚本", url: "https://greasyfork.org/zh-CN", icon: "https://greasyfork.org/vite/assets/blacklogo16-37ZGLlXh.png" },
         { title: "osssr", url: "https://www.osssr.com", icon: "https://www.osssr.com/favicon.ico" },
         { title: "易搜", url: "https://yiso.fun/", icon: "https://yiso.fun/static/img/logo.png" },
-        { title: "小纸条", url: "https://ali.gitcafe.ink/", icon: "https://fuliba123.net/wp-content/uploads/2024/01/81331-ali.gitcafe.ink.png" },
-        { title: "云盘资源分享", url: "https://yunpan1.cc/", icon: "/favicon.ico" },
-        { title: "框框大学", url: "https://www.kkdaxue.com/", icon: "https://www.kkdaxue.com/favicon.ico" },
-        { title: "磁力预览", url: "https://pics.magnetq.com/", icon: "https://pics.magnetq.com/static/images/apple-touch-icon.png" },
 
         { title: "BOSS直聘", url: "https://www.zhipin.com/suzhou/?ka=query_select_city_101190400", icon: "https://www.zhipin.com/favicon.ico" },
-        { title: "智联招聘", url: "https://www.zhaopin.com/", icon: "//common-bucket.zhaopin.cn/img/favicon/favicon-2011.ico" },
         { title: "前程无忧", url: "https://www.51job.com", icon: "https://img04.51jobcdn.com/im/mkt/pc/favicon/favicon_51.ico?20221122" },
 
       ],
@@ -144,19 +115,9 @@ $(function () {
         { title: "gpt3.5-1", url: "https://6kvk14.aitianhu1.top/#/chat/", icon: "https://static.usesless.com/favicon.svg" },
         { title: "gpt3.5-2", url: "https://chat18.aichatos.xyz/#/chat/", icon: "https://static.usesless.com/favicon.svg" },
         { title: "gpt3.5-3", url: "https://uan6d6.aitianhu1.top/", icon: "https://uan6d6.aitianhu1.top/favicon.ico" },
-        { title: "gpt3.5-4", url: "https://f1.001.lat/#/chat/1002", icon: "https://f1.001.lat/favicon.ico" },
-        { title: "gpt3.5-5", url: "https://chat.letdata.net/ichat", icon: "https://chat.letdata.net/logo.svg" },
         { title: "gpt3.5-6", url: "https://chat04.a1r.cc/#/chat/", icon: "https://qiniuchat.littlewheat.com/favicon.svg" },
         { title: "gpt3.5-7", url: "https://ai27.gptforlove.com/", icon: "https://ai27.gptforlove.com/favicon.ico" },
         { title: "gpt3.5-8", url: "https://chat.tinycms.xyz:3002/#/", icon: "https://chat.tinycms.xyz:3002/favicon.ico" },
-        { title: "gpt4-1", url: "https://chat.gking.me/", icon: "https://chat.gking.me/k.png" },
-        
-
-
-
-
-
-
 
         
       ],
@@ -181,7 +142,6 @@ $(function () {
         { title: "51 LA 统计", url: "https://user.51.la/i/product", icon: "https://51.la/favicon.ico" },
         { title: "maven", url: "https://mvnrepository.com/", icon: "https://s1.ax1x.com/2022/09/12/vXhrcR.png" },
         { title: "bootCDN", url: "https://www.bootcdn.cn/", icon: "https://www.bootcdn.cn/assets/ico/favicon.ico" },
-        { title: "LeetCode", url: "https://leetcode.cn/problemset/", icon: "https://leetcode.cn/favicon.ico" },
         { title: "api", url: "https://api.aa1.cn/", icon: "https://api.aa1.cn/favicon.ico" },
         { title: "UnCSS", url: "https://uncss-online.com/", icon: "https://uncss-online.com/static/img/favicon.ico" },
         {
@@ -237,8 +197,7 @@ $(function () {
         },
         { title: "Layui", url: "https://layui.dev/docs/2/", icon: "https://layui.dev/favicon.ico" },
         { title: "图鸟UI", url: "https://vue2.tuniaokj.com/", icon: "https://vue2.tuniaokj.com/favicon.ico" },
-        { title: "Pug-UI", url: "https://qdstudy.gitee.io/pug-ui/", icon: "https://www.bootcss.com/assets/favicons/favicon.ico" },
-        { title: "赛泰先生", url: "https://www.altitude.xin/blog/home/#/", icon: "https://www.altitude.xin/blog/home/favicon.ico" },
+        { title: "Pug-UI", url: "https://gitee.com/qdstudy/pug-ui/blob/master/README.md", icon: "https://www.bootcss.com/assets/favicons/favicon.ico" },
       ],
     },
     
