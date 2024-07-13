@@ -177,7 +177,7 @@ $(function () {
           const element = children[index];
           html += `<li class="link-item${index}"><a class="link-a" href="${element.url}" target="_blank">
                           <img src="${element.icon || '../favicon.ico'}">
-                          <span>${element.title}</span></a>
+                          <span title="${element.title}">${element.title}</span></a>
                           <span class="more">
                             <div class="dropdown">
                               <div class="dropdown-trigger">
