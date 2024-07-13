@@ -16,7 +16,7 @@ $(function () {
         // pug.close("loadingBox");
         // $("#login").prop("disabled", true);
         const html = `<span class="fz12" style="display: block;padding: 13px;color: #155724;background: #d4edda;border-radius: 6px;text-align: center;letter-spacing: 2px;">
-                        <a style="color: #155724;" href="https://kdocs.cn/l/cvbkCfVYkGf0" target="_blank">-- 正规三网大流量卡对比表 实时更新中...  --</a>
+                        <a style="color: #155724;" href="https://kdocs.cn/l/cuFDyDg4rylh" target="_blank">-- 正规三网大流量卡对比表 实时更新中...  --</a>
                       </span>\n`;
         $("#custom_link_box").html(html);
         createAppDom(SERVR_FAIL_DEFAULT_APPS);
