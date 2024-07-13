@@ -79,7 +79,7 @@ new Vue({
       this.yuanma = "";
     },
     setDefaultIconHandler(){
-      this.form.icon = "/web/favicon.ico";
+      this.form.icon = "/favicon.ico";
     },
     validBlank(str) {
       return str === "" || str === "undefined" || str == undefined;

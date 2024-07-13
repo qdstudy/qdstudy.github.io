@@ -24,8 +24,14 @@ $(function () {
         { title: "小静儿影视", url: "https://xiaojinger.cc/", icon: "https://xiaojinger.cc/static/ds3/img/favicon.png" },
         { title: "03影院", url: "https://www.03yy.co/", icon: "https://www.03yy.co/favicon.ico" },
         { title: "共青春影院", url: "https://gqc.ink/", icon: "https://gqc.ink/favicon.ico" },
+        { title: "51搜剧", url: "https://51souju1.com/", icon: "https://51souju1.com/upload/site/20240308-1/d1b8cb820ccfd75329e10a9f4814d08b.png" },
         { title: "韩剧看看", url: "https://www.hanjukankan.com/", icon: "https://www.hanjukankan.com/templets/default2022/images/img/logo_s.png" },
-        
+        { title: "神马影院", url: "https://www.smyy93.com", icon: "https://www.smyy93.com/favicon.ico" },
+        { title: "鱼TV影视-短剧", url: "https://www.yutv.top/index.php/vod/show/id/1.html", icon: "https://www.yutv.top/template/conch/asset/img/favicon.png" },
+        { title: "牛牛影视-短剧", url: "https://www.niutv.top/index.php/vod/type/id/1.html", icon: "https://www.niutv.top/template/mxone/mxstatic/picture/logo.png" },
+        { title: "608影院-短剧", url: "https://www.608tv.com/vodtype/32.html", icon: "https://www.608tv.com/template/conch/asset/img/favicon.ico" },
+        { title: " 肚子里影视-短剧", url: "https://www.duzili.cc/index.php/vod/type/id/53.html", icon: "https://www.duzili.cc/upload/mxprocms/20240529-1/e16e5520a79b437a1f1ab5f63e59f265.png" },
+
 
       ],
     },

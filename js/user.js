@@ -11,13 +11,12 @@ $(function () {
     beforeLoginBoxInit();
     function beforeLoginBoxInit() {
         $(".app-search-wrapper").css("background", "url(/images/bgimg_2.jpg)");
-        $("nav .nav-user-wraper").html(`<button class="pug-btn pug-btn-sm pug-btn-primary" id="login">登录/注册</button>\n`);
+        $("nav .nav-user-wraper").html(`<button class="pug-btn pug-btn-sm pug-btn-primary" id="login">登录 / 注册</button>\n`);
         // 获取系统导航
         // pug.close("loadingBox");
         // $("#login").prop("disabled", true);
         const html = `<span class="fz12" style="display: block;padding: 13px;color: #155724;background: #d4edda;border-radius: 6px;text-align: center;letter-spacing: 2px;">
-                        <a style="color: #155724;" href="https://vvan7v9l4y8.feishu.cn/wiki/VY3BwQg9riPZgikr5xkc6fdhnfh
-                        " target="_blank">-- 正规三网大流量卡，实时更新中，点我获取性价比套餐  --</a>
+                        <a style="color: #155724;" href="https://kdocs.cn/l/cvbkCfVYkGf0" target="_blank">-- 正规三网大流量卡对比表 实时更新中...  --</a>
                       </span>\n`;
         $("#custom_link_box").html(html);
         createAppDom(SERVR_FAIL_DEFAULT_APPS);
