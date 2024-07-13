@@ -40,6 +40,7 @@ $(function () {
       children: [
         { title: "今日热榜", url: "https://hot.baiwumm.com/", icon: "https://hot.baiwumm.com/logo.svg" },
         { title: "5E Play", url: "https://www.5eplay.com/", icon: "https://static.5eplay.com/images/favicon.ico" },
+        { title: "CSBOY直播间", url: "https://www.huya.com/captainmo", icon: "https://www.huya.com/favicon.ico" },
         { title: "电动邦", url: "https://www.diandong.com", icon: "//g.dd-img.com/pc/img/favicon/favicon.ico" },
         { title: "懂车帝", url: "https://www.dongchedi.com/", icon: "//p3.dcarimg.com/obj/eden-cn/vlseh7ubqnuhs/motor/favicon/favicon-96x96.png" },
         { title: "小熊油耗", url: "http://www.xiaoxiongyouhao.com/fprice/", icon: "http://www.xiaoxiongyouhao.com/favicon.ico" },
@@ -56,12 +57,16 @@ $(function () {
       title: "工具",
       children: [
         { title: "金山文档", url: "https://www.kdocs.cn/latest?from=docs", icon: "https://account.wps.cn/favicon.ico" },
+        { title: "processon", url: "https://www.processon.com/", icon: "https://www.processon.com/favicon.ico" },
+        { title: "diagrams", url: "https://app.diagrams.net/", icon: "https://app.diagrams.net/favicon.ico" },
+        { title: "excalidraw", url: "https://excalidraw.com/", icon: "https://excalidraw.com/favicon.ico" },
         { title: "文叔叔快传", url: "https://www.wenshushu.cn/", icon: "https://www.wenshushu.cn/favicon.ico" },
         { title: "微信传输助手", url: "https://filehelper.weixin.qq.com/", icon: "https://mp.weixin.qq.com/favicon.ico" },
         { title: "百度翻译", url: "https://fanyi.baidu.com/#zh/en/", icon: "https://fanyi.baidu.com/favicon.ico" },
         { title: "帮小忙", url: "https://tool.browser.qq.com/", icon: "https://tool.browser.qq.com/favicon.ico" },
         { title: "老鱼简历", url: "https://www.laoyujianli.com/", icon: "https://www.laoyujianli.com/favicon.ico" },
-        { title: "表情包大全", url: "https://www.dbbqb.com/", icon: "https://www.dbbqb.com/favicon.ico" },
+        { title: "嘉立创EDA", url: "https://u.lceda.cn/account/user/projects/all", icon: "https://u.lceda.cn/favicon.ico" },
+        { title: "PS在线", url: "https://www.photopea.com/", icon: "https://www.photopea.com/promo/icon512.png" },
         { title: "在线P图", url: "https://www.meishuzi.cn/size", icon: "https://www.meishuzi.cn/favicon.ico" },
         { title: "无水印解析", url: "https://dlpanda.com/zh-CN", icon: "https://dlpanda.com/favicon.ico" },
         { title: "哔哩哔哩视频解析", url: "https://snapany.com/zh/bilibili", icon: "https://snapany.com/favicon.ico" },
@@ -79,7 +84,7 @@ $(function () {
       title: "资源",
       children: [
         { 
-          title: "工具箱- 7h3s", 
+          title: "前度软件分享- 7h3s", 
           url: "https://www.alipan.com/s/ZG1bU6brmha", 
           icon: "https://img.alicdn.com/imgextra/i1/O1CN01JDQCi21Dc8EfbRwvF_!!6000000000236-73-tps-64-64.ico" 
         },
@@ -91,21 +96,12 @@ $(function () {
         { title: "油猴脚本", url: "https://greasyfork.org/zh-CN", icon: "https://greasyfork.org/vite/assets/blacklogo16-37ZGLlXh.png" },
         { title: "osssr", url: "https://www.osssr.com", icon: "https://www.osssr.com/favicon.ico" },
         { title: "易搜", url: "https://yiso.fun/", icon: "https://yiso.fun/static/img/logo.png" },
-
+        { title: "表情包大全", url: "https://www.dbbqb.com/", icon: "https://www.dbbqb.com/favicon.ico" },
+        { title: "极简壁纸", url: "https://bz.zzzmh.cn/index", icon: "https://bz.zzzmh.cn/favicon.ico" },
+        { title: "AI绘画", url: "https://www.bilibili.com/read/cv22159609/", icon: "https://ideaiai.com/favicon.ico" },
         { title: "BOSS直聘", url: "https://www.zhipin.com/suzhou/?ka=query_select_city_101190400", icon: "https://www.zhipin.com/favicon.ico" },
         { title: "前程无忧", url: "https://www.51job.com", icon: "https://img04.51jobcdn.com/im/mkt/pc/favicon/favicon_51.ico?20221122" },
 
-      ],
-    },
-    {
-      title: "设计",
-      children: [
-        { title: "processon", url: "https://www.processon.com/", icon: "https://www.processon.com/favicon.ico" },
-        { title: "diagrams", url: "https://app.diagrams.net/", icon: "https://app.diagrams.net/favicon.ico" },
-        { title: "excalidraw", url: "https://excalidraw.com/", icon: "https://excalidraw.com/favicon.ico" },
-        { title: "嘉立创EDA", url: "https://u.lceda.cn/account/user/projects/all", icon: "https://u.lceda.cn/favicon.ico" },
-        { title: "PS在线", url: "https://www.photopea.com/", icon: "https://www.photopea.com/promo/icon512.png" },
-        { title: "AI绘画", url: "https://www.bilibili.com/read/cv22159609/", icon: "https://ideaiai.com/favicon.ico" },
       ],
     },
     {
