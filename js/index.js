@@ -60,6 +60,7 @@ $(function () {
         { title: "processon", url: "https://www.processon.com/", icon: "https://www.processon.com/favicon.ico" },
         { title: "diagrams", url: "https://app.diagrams.net/", icon: "https://app.diagrams.net/favicon.ico" },
         { title: "excalidraw", url: "https://excalidraw.com/", icon: "https://excalidraw.com/favicon.ico" },
+        { title: "通义千问", url: "https://tongyi.aliyun.com/qianwen/", icon: "https://img.alicdn.com/imgextra/i1/O1CN01AKUdEM1qP6BQVaYhT_!!6000000005487-2-tps-512-512.png" },
         { title: "文叔叔快传", url: "https://www.wenshushu.cn/", icon: "https://www.wenshushu.cn/favicon.ico" },
         { title: "微信传输助手", url: "https://filehelper.weixin.qq.com/", icon: "https://mp.weixin.qq.com/favicon.ico" },
         { title: "百度翻译", url: "https://fanyi.baidu.com/#zh/en/", icon: "https://fanyi.baidu.com/favicon.ico" },
