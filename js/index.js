@@ -127,6 +127,22 @@ $(function () {
       ],
     },
     {
+      title: "C#相关",
+      children: [
+        { title: "图灵工控 · 语雀", url: "https://www.yuque.com/albertzhao/gongkong", 
+          icon: "https://mdn.alipayobjects.com/huamei_0prmtq/afts/img/A*vMxOQIh4KBMAAAAAAAAAAAAADvuFAQ/original" },
+          { title: "HslCommunication", url: "https://www.hsltechnology.cn/Doc/HslCommunication", icon: "https://www.hsltechnology.cn/images/logo.jpg" },
+          { title: "C#开发", url: "https://dlgcy.com/", icon: "https://qdstudy.github.io/favicon.ico" },
+          { title: "WPF控件", url: "https://dlgcy.com/wpf-control-ui-collection/", icon: "https://qdstudy.github.io/favicon.ico" },
+          { title: "SunnyUI", url: "https://gitee.com/yhuse/SunnyUI/wikis/pages", icon: "https://images.gitee.com/uploads/images/2021/0324/213615_54240ba9_416720.png" },
+          { title: "hzhcontrols", url: "https://www.hzhcontrols.com/doc.html", icon: "https://ww.hzhcontrols.com/images/logo.png" },
+          { title: "AntdUI", url: "https://gitee.com/antdui/AntdUI/wikis/pages", icon: "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" },
+        
+
+
+      ],
+    },
+    {
       title: "编程",
       children: [
         { title: "在线编程工具", url: "https://ide.judge0.com/", icon: "https://ide.judge0.com/favicon.ico" },
