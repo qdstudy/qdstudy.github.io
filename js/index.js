@@ -152,6 +152,7 @@ $(function () {
           url: "https://yesicon.app/",
           icon: "https://yesicon.app/favicon.svg"
         },
+        { title: "VS Marketplace", url: "https://marketplace.visualstudio.com/", icon: "https://marketplace.visualstudio.com/favicon.ico" },
       ],
     },
     // {
