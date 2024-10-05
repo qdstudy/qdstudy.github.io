@@ -66,11 +66,6 @@ $(function () {
     {
       title: "资源",
       children: [
-        { 
-          title: "前度软件分享- 7h3s", 
-          url: "https://www.alipan.com/s/ZG1bU6brmha", 
-          icon: "https://img.alicdn.com/imgextra/i1/O1CN01JDQCi21Dc8EfbRwvF_!!6000000000236-73-tps-64-64.ico" 
-        },
         {
           title: "软件库",
           url: "https://mp.weixin.qq.com/s?__biz=MzIzNDUxNzUzNw==&mid=2247559735&idx=1&sn=2b099655c5a4051c576b6c9f2d5a2ec0",
