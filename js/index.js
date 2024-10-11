@@ -9,7 +9,6 @@ $(function () {
       children: [
         { title: "哔哩哔哩", url: "https://www.bilibili.com/", icon: "https://www.bilibili.com/favicon.ico" },
         { title: "网易云音乐", url: "https://music.163.com/#/my/m/music/playlist?id=963538401", icon: "http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg" },
-        { title: "歌曲宝", url: "https://www.gequbao.com/", icon: "https://www.gequbao.com/favicon.ico" },
         { title: "洛雪音乐", url: "https://lxmusic.toside.cn/", icon: "https://lxmusic.toside.cn/img/favicon.ico" },
         {
           title: "抖音网页版",
@@ -17,14 +16,15 @@ $(function () {
           icon: "https://lf1-cdn-tos.bytegoofy.com/goofy/ies/douyin_web/public/favicon.ico"
         },
         { title: "央视网", url: "https://tv.cctv.com/live/cctv1", icon: "https://tv.cctv.com/favicon.ico" },
+        { title: "酷米动漫", url: "http://www.kumi.cn/", icon: "/favicon.ico" },
         { title: "电影狗", url: "http://www.dianyinggou.com/", icon: "http://www.dianyinggou.com/favicon.ico" },
         { title: "高清影视", url: "https://1080zyk6.com/", icon: "https://1080zyk6.com/favicon.ico" },
-        { title: "03影院", url: "https://www.03yy.co/", icon: "https://www.03yy.co/favicon.ico" },
-        { title: "共青春影院", url: "https://gqc.ink/", icon: "https://gqc.ink/favicon.ico" },
-        { title: "51搜剧", url: "https://51souju1.com/", icon: "https://51souju1.com/upload/site/20240308-1/d1b8cb820ccfd75329e10a9f4814d08b.png" },
         { title: "韩剧看看", url: "https://www.hanjukankan.com/", icon: "https://www.hanjukankan.com/templets/default2022/images/img/logo_s.png" },
         { title: "神马影院", url: "https://www.smyy93.com", icon: "https://www.smyy93.com/favicon.ico" },
         { title: "608影院-短剧", url: "https://www.608tv.com/vodtype/32.html", icon: "https://www.608tv.com/template/conch/asset/img/favicon.ico" },
+        { title: "追剧吧", url: "https://cddys1.me/", icon: "https://cddys1.me/upload/mxprocms/20231029-1/a5e92bb4f37d8ca652eca7a496b5bb2c.png" },
+        { title: "人人影视 ", url: "https://www.renren.pro/", icon: "https://www.renren.pro/favicon.ico" },
+        { title: "绝对影视", url: "https://www.jdys.art/", icon: "https://www.jdys.art/favicon.ico" },
 
 
       ],
@@ -96,8 +96,6 @@ $(function () {
         { title: "gpt3.5-1", url: "https://6kvk14.aitianhu1.top/#/chat/", icon: "https://static.usesless.com/favicon.svg" },
         { title: "gpt3.5-3", url: "https://uan6d6.aitianhu1.top/", icon: "https://uan6d6.aitianhu1.top/favicon.ico" },
         { title: "gpt3.5-6", url: "https://chat04.a1r.cc/#/chat/", icon: "https://qiniuchat.littlewheat.com/favicon.svg" },
-        { title: "gpt3.5-7", url: "https://ai27.gptforlove.com/", icon: "https://ai27.gptforlove.com/favicon.ico" },
-        { title: "gpt3.5-8", url: "https://chat.tinycms.xyz:3002/#/", icon: "https://chat.tinycms.xyz:3002/favicon.ico" },
 
         
       ],
