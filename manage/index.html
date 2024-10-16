@@ -13,11 +13,10 @@
     <link rel="shortcut icon" href="https://qdstudy.github.io/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../lib/pug-ui/css/pug.css" />
     <script src="../lib/pug-ui/js/jquery-3.1.0.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.2/vue.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/axios/1.5.0/axios.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/ant-design-vue/1.7.2/antd.min.css">
-    <script src="https://cdn.bootcdn.net/ajax/libs/ant-design-vue/1.7.2/antd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/cheerio"></script>
+    <script src="../lib/vue.min.js"></script>
+    <link rel="stylesheet" href="../lib/ant-design-vue/antd.min.css">
+    <script src="../lib/ant-design-vue/antd.min.js"></script>
+    <script src="../lib/cheerio.js"></script>
     <script src="../js/clipboard.min.js"></script>
     <style>html{height:100%}
       body{display:flex;flex-direction:column;height:100%;background: #eff3f5;}
@@ -70,7 +69,7 @@
     <main class="pug-container oh" id="app" v-clock>
           <a-card>
             <div style="margin-bottom: 16px">
-              <a-input addon-before="url" allow-clear v-model="form.url" @blur="setIconHandler"/>
+              <a-input addon-before="url" allow-clear v-model="form.url" @dblclick="setIconHandler"/>
             </div>
             <div style="margin-bottom: 16px">
               <a-input addon-before="title" allow-clear v-model="form.title" />
@@ -103,7 +102,7 @@
                 解析
               </a-button>
             </span>
-            <a-textarea :rows="5" v-model="yuanma" />
+            <a-textarea :rows="15" v-model="yuanma" />
           </a-card>
     </main>
 
