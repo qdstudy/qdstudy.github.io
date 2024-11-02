@@ -42,6 +42,7 @@ $(function () {
         { title: "下厨房", url: "https://www.xiachufang.com/", icon: "https://s.chuimg.com/favicon.ico" },
         { title: "猫眼票房", url: "https://piaofang.maoyan.com/dashboard", icon: "https://obj.pipi.cn/festatic/piaofang/moviepro/favicon.ico" },
         { title: "意林在线", url: "http://qikan.lifves.com/", icon: "https://www.lifves.com/favicon.ico" },
+        { title: "Z-Library", url: "https://z-lib.io/", icon: "/favicon.ico" },
 
 
       ],
