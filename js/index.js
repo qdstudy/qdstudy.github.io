@@ -17,13 +17,11 @@ $(function () {
         },
         { title: "央视网", url: "https://tv.cctv.com/live/cctv1", icon: "https://tv.cctv.com/favicon.ico" },
         { title: "酷米动漫", url: "http://www.kumi.cn/", icon: "/favicon.ico" },
-        { title: "电影狗", url: "http://www.dianyinggou.com/", icon: "http://www.dianyinggou.com/favicon.ico" },
         { title: "高清影视", url: "https://1080zyk6.com/", icon: "https://1080zyk6.com/favicon.ico" },
         { title: "韩剧看看", url: "https://www.hanjukankan.com/", icon: "https://www.hanjukankan.com/templets/default2022/images/img/logo_s.png" },
         { title: "神马影院", url: "https://www.smyy93.com", icon: "https://www.smyy93.com/favicon.ico" },
         { title: "608影院-短剧", url: "https://www.608tv.com/vodtype/32.html", icon: "https://www.608tv.com/template/conch/asset/img/favicon.ico" },
         { title: "追剧吧", url: "https://cddys1.me/", icon: "https://cddys1.me/upload/mxprocms/20231029-1/a5e92bb4f37d8ca652eca7a496b5bb2c.png" },
-        { title: "人人影视 ", url: "https://www.renren.pro/", icon: "https://www.renren.pro/favicon.ico" },
         { title: "绝对影视", url: "https://www.jdys.art/", icon: "https://www.jdys.art/favicon.ico" },
 
 
@@ -57,6 +55,7 @@ $(function () {
         { title: "帮小忙", url: "https://tool.browser.qq.com/", icon: "https://tool.browser.qq.com/favicon.ico" },
         { title: "老鱼简历", url: "https://www.laoyujianli.com/", icon: "https://www.laoyujianli.com/favicon.ico" },
         { title: "resumeis-简历", url: "https://www.resumeis.com/home", icon: "https://www.resumeis.com/home/favicon.ico" },
+        { title: "爱PPT", url: "https://www.2ppt.com/", icon: "https://www.2ppt.com/favicon.ico" },
         { title: "PS在线", url: "https://www.photopea.com/", icon: "https://www.photopea.com/promo/icon512.png" },
         { title: "飞书文档", url: "https://vvan7v9l4y8.feishu.cn/drive/home/", icon: "https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/1ec7129d900e442d8501d810efdaa369~tplv-jbbdkfciu3-image:0:0.image" },
         
@@ -198,9 +197,9 @@ $(function () {
           url: "https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html",
           icon: "https://fuliba123.net/wp-content/uploads/2024/01/d03c3-blog.luckly-mjw.cn.png" },
         { title: "PDF派", url: "https://www.pdfpai.com/", icon: "https://www.pdfpai.com/statics/images/favicon.ico" },
-        { title: "爱PPT", url: "https://www.2ppt.com/", icon: "https://www.2ppt.com/favicon.ico" },
         { title: "百家姓加密", url: "https://www.bjxah.com/", icon: "https://api.iowen.cn/favicon/c.p2hp.com.png" },
         { title: "蓝奏网盘", url: "https://pc.woozooo.com/mydisk.php", icon: "https://pc.woozooo.com/favicon.ico" },
+        { title: "辞职信生成器", url: "https://www.cizhixin.com/czx/", icon: "https://www.cizhixin.com//favicon.ico" },
       ],
     },
     
