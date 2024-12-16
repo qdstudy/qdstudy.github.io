@@ -92,6 +92,7 @@ $(function () {
         { title: "gpt3.5-1", url: "https://6kvk14.aitianhu1.top/#/chat/", icon: "https://static.usesless.com/favicon.svg" },
         { title: "gpt3.5-3", url: "https://uan6d6.aitianhu1.top/", icon: "https://uan6d6.aitianhu1.top/favicon.ico" },
         { title: "gpt3.5-6", url: "https://chat04.a1r.cc/#/chat/", icon: "https://qiniuchat.littlewheat.com/favicon.svg" },
+        { title: "gpt 汇总", url: "https://github.com/xx025/carrot", icon: "https://qiniuchat.littlewheat.com/favicon.svg" },
 
         
       ],
