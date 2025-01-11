@@ -11,24 +11,21 @@ $(function () {
     beforeLoginBoxInit();
     function beforeLoginBoxInit() {
         $(".app-search-wrapper").css("background", "url(/images/bgimg_2.jpg)");
-        $("nav .nav-user-wraper").html(`<button class="pug-btn pug-btn-sm pug-btn-primary" id="login">进入圈子</button>\n`);
+        $("nav .nav-user-wraper").html(`<button class="pug-btn pug-btn-sm pug-btn-primary" id="login">云文档</button>\n`);
         // 获取系统导航
         // pug.close("loadingBox");
         // $("#login").prop("disabled", true);
-        // let html = `<span class="fz12" style="display: block;padding: 13px;color: #155724;background: #d4edda;border-radius: 6px;text-align: center;letter-spacing: 2px;">
-        //                 <a style="color: #155724;" href="https://kdocs.cn/l/cuFDyDg4rylh" target="_blank">-- 正规三网大流量卡对比表 实时更新中...  --</a>
-        //               </span>\n`;
         let html = `<span class="fz12" style="display: block;padding: 13px;color: #155724;background: #d4edda;border-radius: 6px;text-align: center;letter-spacing: 2px;">
-                        <a style="color: #155724;" href="https://xiaotuitui.cc//admin/login/register?intval=23c6ad" target="_blank">-- 大学生学习桶/智慧数 热门开启中...  --</a>
-                      </span>\n`;              
+                        <a style="color: #155724;" href="https://kdocs.cn/l/cuFDyDg4rylh" target="_blank">-- 正规三网大流量卡对比表 实时更新中  --</a>
+                      </span>\n`;            
         $("#custom_link_box").html(html);
         createAppDom(SERVR_FAIL_DEFAULT_APPS);
         setAppToc(SERVR_FAIL_DEFAULT_APPS);
-        // 登录注册
+        // 登录注册->云文档
         $("#login").on("click", function () {
             // loginBoxInit();
             // window.open('https://support.qq.com/products/514070/faqs-more?id=154890', '_blank');
-            window.open('https://pc.fenchuan8.com/#/index?forum=96586&yqm=CWQ8D', '_blank');
+            window.open('https://vvan7v9l4y8.feishu.cn/wiki/', '_blank');
         });
     }
     /**===登录窗口初始化================================================================================================================================================== */
