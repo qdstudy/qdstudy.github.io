@@ -16,7 +16,7 @@ $(function () {
         // pug.close("loadingBox");
         // $("#login").prop("disabled", true);
         let html = `<span class="fz12" style="display: block;padding: 13px;color: #155724;background: #d4edda;border-radius: 6px;text-align: center;letter-spacing: 2px;">
-                        <a style="color: #155724;" href="https://kdocs.cn/l/cuFDyDg4rylh" target="_blank">-- 正规三网大流量卡对比表 实时更新中  --</a>
+                        <a style="color: #155724;" href="https://fuliba.simhaoka.com/phone/index?id=93E807BA59E6D60FD701F00DA4EF67F3" target="_blank">-- 精选亲民流量卡 实时更新中  --</a>
                       </span>\n`;            
         $("#custom_link_box").html(html);
         createAppDom(SERVR_FAIL_DEFAULT_APPS);
