@@ -125,3 +125,12 @@ to{background-position:2000px 0}
 
 
 /* ======================================================================================================================================================== */
+#openDoc{background-color:#4853e5;background-image:linear-gradient(132deg,#4853e5 31%,#0093e9 71%,#bd52c1 100%);padding:0 15px}
+.app-search-wrapper{background:url(/images/bgimg_2.jpg)}
+[v-cloak]{display:none}
+.ant-tabs-bar{margin:0;border-bottom:0}
+.ant-tabs-nav .ant-tabs-tab{margin:0;padding:12px 11px}
+.ant-tabs-tab-active{border-bottom:none !important}
+.ant-tabs-nav-wrap{margin-bottom:-5px}
+.strong{margin-left:-16px !important}
+*,:after,:before{box-sizing:unset}

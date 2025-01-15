@@ -11,33 +11,16 @@
     <meta property="og:url" content="https://qdstudy.github.io/" />
     <meta name="referrer" content="always" />
     <link rel="shortcut icon" type="image/x-icon" href="https://qdstudy.github.io/favicon.ico"/>
-    <link rel="stylesheet" href="./css/animate.css" />
     <link rel="stylesheet" href="./css/iconfont.css"/>
+    <link rel="stylesheet" href="./lib/ant-design-vue/antd.min.css">
     <link rel="stylesheet" href="./lib/pug-ui/css/pug.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/user.css" />
     <script src="./lib/pug-ui/js/jquery-3.1.0.min.js"></script>
-    <script src="./lib/pug-ui/js/pug.js"></script>
-    <script src="./js/clipboard.min.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/user.js"></script>
-    <style>
-      #login{
-        background-color: #4853e5;
-        background-image: linear-gradient(132deg, #4853e5 31%, #0093e9 71%, #bd52c1 100%);
-        padding: 0 15px;
-      }
-    </style>
-    <!-- 百度统计 -->
-    <script>
-      var _hmt = _hmt || [] ;
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?58856e21994b2201e22567d60aee53a9";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
+    <script src="./js/app.js"></script>
+    <script src="./lib/vue.min.js"></script>
+    <script src="./lib/ant-design-vue/antd.min.js"></script>
+
+    
     <!-- 灵雀应用监控错误统计 -->
     <script type="text/javascript" src="https://js.users.51.la/21840947.js"></script>
     <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
@@ -52,11 +35,15 @@
         <img class="logo" src="./favicon.ico" />
         <li><span class="yulu"></span></li>
         <div class="nav-user-wraper">
+          <button class="pug-btn pug-btn-sm pug-btn-primary" id="openDoc">云文档</button>
         </div>
       </div>
     </nav>
 
+
+
     <main class="pug-container oh">
+
       <div class="app-search-wrapper pr">
         <h1 class="app-slogan">连接世界，探索无限</h2>
         <form action="https://www.baidu.com/s" method="get" target="_blank">
@@ -67,7 +54,6 @@
         </form>
         <div id="keywords"></div>
       </div>
-
 
       <section class="course-area">
         <div class="elevator">
@@ -81,10 +67,47 @@
         </div>
 
       <div class="app-link-wrapper" style="margin: 30px 0;">
-        <!-- 自定义 -->
-        <div id="custom_link_box"><div id="loadingBox"></div></div>
-        <!-- 站长推荐 -->
+
+        <div id="custom_link_box">
+          <span class="fz12" style="display: block;padding: 13px;color: #155724;background: #d4edda;border-radius: 6px;text-align: center;letter-spacing: 2px;">
+            <a style="color: #155724;" href="https://fuliba.simhaoka.com/phone/index?id=93E807BA59E6D60FD701F00DA4EF67F3" target="_blank">-- 精选亲民流量卡 实时更新中  --</a>
+          </span>
+        </div>
+
+
+
+        <!-- 应用 -->
         <div id="sys_link_dox"></div>
+
+        <div id="app" v-clock>
+
+            <div :class="'link-box link-box'+id" :index="id" :id="'toc-title-position-'+id">
+                <div class="headline" style="padding: 15px 0 0;">
+                      <div>
+                          <a-tabs default-active-key="1" size="small">
+                              <a-tab-pane v-for="(app, index) in apps" :key="index">                      
+                                <template #tab>
+                                  <strong class="strong" v-if="index==0">{{app.title}}</strong>
+                                  <span style="vertical-align: text-bottom;color: #262626;font-weight: 600;" v-else>{{app.title}}</span>
+                                </template>
+                                <div class="link-list-d">
+                                  <ul>
+                                    <li class="link-item" v-for="(element, i) in app.children" :key="i">
+                                      <a class="link-a" :href="element.url" target="_blank">
+                                        <img :src="element.icon || './favicon.ico'" alt="">
+                                        <span :title="element.title">{{ element.title }}</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </a-tab-pane>
+                          </a-tabs>
+                      </div>
+                </div>
+            </div>
+
+
+        </div> 
       </div>
     </main>
 
@@ -93,7 +116,6 @@
         <p class="copyright info-box">
           <a href="https://web.51.la/report/main?comId=21840947" target="_blank"><i class="iconfont icon-fankui"></i>报表统计</a>
           <a href="http://wpa.qq.com/msgrd?v=3&uin=2013498006&site=qq&menu=yes" target="_blank"><i class="iconfont icon-xiaoxi"></i>联系作者</a>
-          <!-- <a href="./page/manage.html" target="_blank"><i class="iconfont icon-shuben"></i>添加应用</a> -->
           <a href="/manage" target="_blank"><i class="iconfont icon-shuben"></i>添加应用</a>
         </p>
         <p class="copyright">
@@ -102,5 +124,6 @@
       </div>
     </footer>
 
+    <script src="./js/index.js"></script>
   </body>
 </html>

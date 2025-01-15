@@ -1,14 +1,3 @@
-$(function () {
-  /**==屏蔽ctrl+s========================================================================================================================================== */
-  document.onkeydown = function () {
-    if (event.ctrlKey == true && event.keyCode == 83) {
-      pug.message.tip("调皮了吧，我屏蔽了....");
-      event.preventDefault();
-    }
-  };
-
-});
-
 new Vue({
   el: "#app",
   data: {
