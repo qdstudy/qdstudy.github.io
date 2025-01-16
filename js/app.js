@@ -126,7 +126,6 @@ APPS = [
         icon: "https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico"
       },
       { title: "51 LA 统计", url: "https://user.51.la/i/product", icon: "https://51.la/favicon.ico" },
-      { title: "bootCDN", url: "https://www.bootcdn.cn/", icon: "https://www.bootcdn.cn/assets/ico/favicon.ico" },
       { title: "工具库汇总", url: "https://vvan7v9l4y8.feishu.cn/wiki/Pk0cwfupOi8KKTkeqpqcesWonQe", icon: "/favicon.ico" },
       { title: "支付宝", url: "https://www.alipay.com/", icon: "https://i.alipayobjects.com/common/favicon/favicon.ico" },
       {
@@ -140,26 +139,15 @@ APPS = [
         icon: "https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico"
       },
       { title: "微信支付", url: "https://pay.weixin.qq.com/index.php/", icon: "https://wx.gtimg.com/core/favicon.ico" },
-      { title: "uniapp", url: "https://uniapp.dcloud.net.cn/", icon: "https://unicloud.dcloud.net.cn/favicon.ico" },
       { title: "飞书日记", url: "https://vvan7v9l4y8.feishu.cn/wiki/TI7Yweq4KisVeAkFYlbcuW9cnEb", icon: "//lf-package-cn.feishucdn.com/obj/feishu-static/ccm/pc/web/resource/bear/feishu.ico" },
       { title: "csdn", url: "https://blog.csdn.net/qd2013498006", icon: "https://www.csdn.net/favicon.ico" },
-      {
-        title: "iconfont",
-        url: "https://www.iconfont.cn/",
-        icon: "https://img.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico"
-      },
-      {
-        title: "yesicon",
-        url: "https://yesicon.app/",
-        icon: "https://yesicon.app/favicon.svg"
-      },
-      { title: "VS Marketplace", url: "https://marketplace.visualstudio.com/", icon: "https://marketplace.visualstudio.com/favicon.ico" },
+     
     ],
   },
   {
     id: 7,
     title: "小工具",
-    flag: true,
+    flag: false,
     children: [
       { title: "在线P图", url: "https://www.meishuzi.cn/size", icon: "https://www.meishuzi.cn/favicon.ico" },
       { title: "无水印解析", url: "https://dlpanda.com/zh-CN", icon: "https://dlpanda.com/favicon.ico" },
@@ -176,20 +164,59 @@ APPS = [
   },
   {
     id: 8,
-    title: "小工具",
-    flag: true,
+    title: "前端",
+    flag: false,
     children: [
-      { title: "在线P图", url: "https://www.meishuzi.cn/size", icon: "https://www.meishuzi.cn/favicon.ico" },
-      { title: "无水印解析", url: "https://dlpanda.com/zh-CN", icon: "https://dlpanda.com/favicon.ico" },
-      { title: "哔哩哔哩视频解析", url: "https://snapany.com/zh/bilibili", icon: "https://snapany.com/favicon.ico" },
-      { title: "B站视频下载", url: "https://zhouql.vip/bilibili/", icon: "/favicon.ico" },
-      { title: "m3u8 视频下载", 
-        url: "https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html",
-        icon: "https://fuliba123.net/wp-content/uploads/2024/01/d03c3-blog.luckly-mjw.cn.png" },
-      { title: "PDF派", url: "https://www.pdfpai.com/", icon: "https://www.pdfpai.com/statics/images/favicon.ico" },
-      { title: "百家姓加密", url: "https://www.bjxah.com/", icon: "https://api.iowen.cn/favicon/c.p2hp.com.png" },
-      { title: "蓝奏网盘", url: "https://pc.woozooo.com/mydisk.php", icon: "https://pc.woozooo.com/favicon.ico" },
-      { title: "辞职信生成器", url: "https://www.cizhixin.com/czx/", icon: "https://www.cizhixin.com//favicon.ico" },
+      { title: "bootCDN", url: "https://www.bootcdn.cn/", icon: "https://www.bootcdn.cn/assets/ico/favicon.ico" },
+      { title: "uniapp", url: "https://uniapp.dcloud.net.cn/", icon: "https://unicloud.dcloud.net.cn/favicon.ico" },
+      {
+        title: "iconfont",
+        url: "https://www.iconfont.cn/",
+        icon: "https://img.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico"
+      },
+      { title: "Ant Design Vue", 
+        url: "https://1x.antdv.com/docs/vue/introduce-cn/", 
+        icon: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTI4cHgiIGhlaWdodD0iMTI4cHgiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Mi42ICg2NzQ5MSkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+VnVlPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSI2OS42NDQxMTYlIiB5MT0iMCUiIHgyPSI2OS42NDQxMTYlIiB5Mj0iMTAwJSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjlDREZGIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxNDhFRkYiIG9mZnNldD0iMzcuODYwMDY4NyUiPjwvc3RvcD4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzBBNjBGRiIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9Ii0xOS44MTkxNTUzJSIgeTE9Ii0zNi43OTMxNDY0JSIgeDI9IjEzOC41NzkxOSUiIHkyPSIxNTcuNjM3NTA3JSIgaWQ9ImxpbmVhckdyYWRpZW50LTIiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjlDREZGIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwRjc4RkYiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSI2OC4xMjc5ODcyJSIgeTE9Ii0zNS42OTA1NzM3JSIgeDI9IjMwLjQ0MDA5MTQlIiB5Mj0iMTE0Ljk0MjY3OSUiIGlkPSJsaW5lYXJHcmFkaWVudC0zIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI0ZBOEU3RCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRjc0QTVDIiBvZmZzZXQ9IjUxLjI2MzUxOTElIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNGNTFEMkMiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iVnVlIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5LjAwMDAwMCwgOS4wMDAwMDApIj4KICAgICAgICAgICAgPHBhdGggZD0iTTg5Ljk2LDkwLjQ4IEM3OC41OCw5My40OCA2OC4zMyw4My4zNiA2Ny42Miw4Mi40OCBMNDYuNjYwNDQ4Nyw2Mi4yMjkyMjU4IEM0NS41MDIzODQ5LDYxLjExMDMyMzYgNDQuODQyNjg0NSw1OS41NzI4ODM1IDQ0LjgyOTY5ODcsNTcuOTYyNjM5NiBMNDQuNTAzNTU2NCwxNy41MjA5OTQ4IEM0NC40OTQ4ODYxLDE2LjQ0NTg3NDQgNDQuMDUzNzcxNCwxNS40MTk1MDk1IDQzLjI3OTY4NjQsMTQuNjczMzUxNyBMMjkuNjQ1OTk5OSwxLjUzMTUzNzM3IEMyOC4wNTU0NzUsLTAuMDAxNjA1MDQwMDUgMjUuNTIzMjQyMywwLjA0NDkxMjY1ODggMjMuOTkwMDk5OSwxLjYzNTQzNzU2IEMyMy4yNzE1MTIxLDIuMzgwOTIwNjYgMjIuODcsMy4zNzYwMDgzNCAyMi44Nyw0LjQxMTQzNzQ2IEwyMi44Nyw2NC4zODY0NzUxIEMyMi44Nyw2Ny4wODA3ODkxIDIzLjk1NzIyMzMsNjkuNjYxMTA2NyAyNS44ODU0MDksNzEuNTQyOTc0OCBMNjMuNjAwNDYxNSwxMDguMzUyMDYxIEM2NS45NDY2MzIzLDExMC42NDE4NzMgNjkuNjk2MzU4NCwxMTAuNjI0NjA1IDcyLjAyMTM0MDMsMTA4LjMxMzI4MSIgaWQ9IlBhdGgtQ29weSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSIgZmlsbC1ydWxlPSJub256ZXJvIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Ni40MTUwMDAsIDU0LjgzMTE1Nykgc2NhbGUoLTEsIDEpIHRyYW5zbGF0ZSgtNTYuNDE1MDAwLCAtNTQuODMxMTU3KSAiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTY4LDkwLjExNjMxMjIgQzU2LjYyLDkzLjExNjMxMjIgNDUuNDYsODMuMzYgNDQuNzUsODIuNDggTDIzLjc5MDQ0ODcsNjIuMjI5MjI1OCBDMjIuNjMyMzg0OSw2MS4xMTAzMjM2IDIxLjk3MjY4NDUsNTkuNTcyODgzNSAyMS45NTk2OTg3LDU3Ljk2MjYzOTYgTDIxLjYzMzU1NjQsMTcuNTIwOTk0OCBDMjEuNjI0ODg2MSwxNi40NDU4NzQ0IDIxLjE4Mzc3MTQsMTUuNDE5NTA5NSAyMC40MDk2ODY0LDE0LjY3MzM1MTcgTDYuNzc1OTk5OSwxLjUzMTUzNzM3IEM1LjE4NTQ3NSwtMC4wMDE2MDUwNDAwNSAyLjY1MzI0MjMyLDAuMDQ0OTEyNjU4OCAxLjEyMDA5OTkxLDEuNjM1NDM3NTYgQzAuNDAxNTEyMTI1LDIuMzgwOTIwNjYgMy45MDIxMTg3OGUtMTMsMy4zNzYwMDgzNCAzLjkwNzk4NTA1ZS0xMyw0LjQxMTQzNzQ2IEwzLjk0MzUxMjE4ZS0xMyw2NC4zODY0NzUxIEMzLjk0NjgxMTc3ZS0xMyw2Ny4wODA3ODkxIDEuMDg3MjIzMjYsNjkuNjYxMTA2NyAzLjAxNTQwOTAzLDcxLjU0Mjk3NDggTDQwLjc4MDcwOTIsMTA4LjQwMTEwMSBDNDMuMTA2OTMwNCwxMTAuNjcxNDQ0IDQ2LjgxODAxNTEsMTEwLjY3NjUyNSA0OS4xNTA0NDQ1LDEwOC40MTI1NjEiIGlkPSJQYXRoIiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTIpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTQzLjI5ODM0ODgsMTkuMDk5MTkzMSBMMjcuNTU2NjA3OSwzLjg4MjQ2MjQ0IEMyNi43NjI0MjgxLDMuMTE0NzY5NjcgMjYuNzQwOTU2MSwxLjg0ODYyMTc3IDI3LjUwODY0ODgsMS4wNTQ0NDE5NCBDMjcuODg1NDgyNiwwLjY2NDYwNjYxMSAyOC40MDQ0NDM4LDAuNDQ0NDcyNjUxIDI4Ljk0NjYzODYsMC40NDQ0NzI2NTEgTDYwLjM5MjUwMjEsMC40NDQ0NzI2NTEgQzYxLjQ5NzA3MTYsMC40NDQ0NzI2NTEgNjIuMzkyNTAyMSwxLjMzOTkwMzE1IDYyLjM5MjUwMjEsMi40NDQ0NzI2NSBDNjIuMzkyNTAyMSwyLjk4NTgzNzUgNjIuMTczMDM5NiwzLjUwNDA3NzQyIDYxLjc4NDI1MTIsMy44ODA3OTk0MiBMNDYuMDgwMTI4NSwxOS4wOTc1MzAxIEM0NS4zMDUxNTc5LDE5Ljg0ODQ0ODggNDQuMDc0MjE2NywxOS44NDkxODQ3IDQzLjI5ODM0ODgsMTkuMDk5MTkzMSBaIiBpZD0iUGF0aCIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0zKSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" 
+      },
+      { title: "Element UI", url: "https://element.eleme.cn/#/zh-CN/component/installation", icon: "https://element.eleme.cn/favicon.ico" },
+      { title: " Layui ", url: "https://layui.dev/docs/2/", icon: "https://layui.dev/favicon.ico" },
+      { title: "Tuniao", url: "https://vue2.tuniaokj.com/", icon: "https://vue2.tuniaokj.com/favicon.ico" },
+      { title: "Pug UI", url: "https://gitee.com/qdstudy/pug-ui/wikis/pages", icon: "/favicon.ico" },
+      { title: "baseColor", url: "https://blog.luckly-mjw.cn/tool-show/base-color/index.html", icon: "https://blog.luckly-mjw.cn/favicon.ico" },
+      { title: "Animate.css ", url: "https://animate.style/", icon: "https://animate.style/img/favicon.ico" },
+      { title: "Gradient Backgrounds", url: "https://cssgradient.io/gradient-backgrounds/", icon: "https://cssgradient.io/images/favicon-23859487.png" },
+
+
+
+    ],
+  },
+  {
+    id: 9,
+    title: "C#",
+    flag: false,
+    children: [
+      { title: "VS Marketplace", url: "https://marketplace.visualstudio.com/", icon: "https://marketplace.visualstudio.com/favicon.ico" },
+      { title: "WPF 控件 ", url: "https://dlgcy.com/wpf-control-ui-collection/", icon: "https://dlgcy.com/favicon.ico" },
+      { title: "Handycontrol -WPF", url: "https://handyorg.github.io/handycontrol/quick_start/", icon: " https://handyorg.github.io/images/favicon-32x32-HandyOrg.png" },
+      { title: "iNKORE.UI", url: "https://docs.inkore.net/zh-cn/ui-wpf-modern/introduction/", icon: " https://assets.inkore.net/logo/iNKORE.ico" },
+      { title: "Newbeecoder.UI", url: "https://gitcode.com/open-source-toolkit/46704", icon: "/favicon.ico" },
+      { title: "SunnyUI", url: "https://gitee.com/yhuse/SunnyUI/wikis/pages", icon: "https://images.gitee.com/uploads/images/2021/0324/213615_54240ba9_416720.png" },
+      { title: "LiveCharts2", url: "https://livecharts.dev/", icon: "https://livecharts.dev/favicon.ico" },
+      { title: "ScottPlot", url: "https://scottplot.net/", icon: "https://scottplot.net/favicon.ico" },
+      { title: "HslCommunication", url: "https://www.hsltechnology.cn/Doc/HslCommunication", icon: "https://www.hsltechnology.cn/favicon.ico" },
+      { title: "CommunityToolkit", url: "https://mvvm.coldwind.top/", icon: "https://mvvm.coldwind.top/assets/images/favicon.png" },
+      { title: "Masuit.Tools", url: "https://mp.weixin.qq.com/s?__biz=MzIxMTUzNzM5Ng==&mid=2247494973&idx=1&sn=299459a3284dd130baf6f3b0e4d3111f&scene=21#wechat_redirect", icon: "/favicon.ico" },
+      { title: "Common.Utility", url: "https://mp.weixin.qq.com/s?__biz=MzIxMTUzNzM5Ng==&mid=2247492029&idx=1&sn=461c7773635bdc22b52421bbddcee15d&scene=21#wechat_redirect", icon: "/favicon.ico" },
+      { title: "Easy-DotNET", url: "https://www.easy-dotnet.com/pages/easytool/", icon: "https://www.easy-dotnet.com/img/favicon.ico" },
+      { title: "TouchSocket", url: "https://touchsocket.net/docs/current/tcpintroduction", icon: "https://touchsocket.net/img/TouchSocketlogo.png" },
+      
+
+
+
+
+
+
+
     ],
   },
 ];
