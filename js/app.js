@@ -20,6 +20,11 @@ APPS = [
       { title: "608影院-短剧", url: "https://www.608tv.com/vodtype/32.html", icon: "https://www.608tv.com/template/conch/asset/img/favicon.ico" },
       { title: "追剧吧", url: "https://cddys1.me/", icon: "https://cddys1.me/upload/mxprocms/20231029-1/a5e92bb4f37d8ca652eca7a496b5bb2c.png" },
       { title: "绝对影视", url: "https://www.jdys.art/", icon: "https://www.jdys.art/favicon.ico" },
+      { title: "三集电影", url: "https://www.3jdy.com/", icon: "https://www.3jdy.com/upload/mxprocms/20240527-1/bf28237e94f7363a18b6379730ea8900.png" },
+      { title: "飞快TV", url: "https://feikuai.tv/", icon: "https://feikuai.tv/upload/mxprocms/20240415-1/4c6ddace7d0fc43ec678c070a6255c68.png" },
+      { title: "LIBVIO", url: "https://iioo.me/", icon: "https://www.libvio.fun/statics/img/favicon.ico" },
+      { title: "趣动漫", url: "https://www.qdm8.com/", icon: "https://www.qdm8.com/favicon.ico" },
+
 
 
     ],
@@ -37,7 +42,7 @@ APPS = [
       { title: "丁香园用药助手", url: "https://drugs.dxy.cn/", icon: "https://drugs.dxy.cn/pc/imgs/logo-icon.png" },
       { title: "下厨房", url: "https://www.xiachufang.com/", icon: "https://s.chuimg.com/favicon.ico" },
       { title: "猫眼票房", url: "https://piaofang.maoyan.com/dashboard", icon: "https://obj.pipi.cn/festatic/piaofang/moviepro/favicon.ico" },
-      { title: "Z-Library", url: "https://z-lib.io/", icon: "/favicon.ico" },
+
 
 
     ],
@@ -60,6 +65,16 @@ APPS = [
       { title: "PS在线", url: "https://www.photopea.com/", icon: "https://www.photopea.com/promo/icon512.png" },
       // { title: "飞书文档", url: "https://vvan7v9l4y8.feishu.cn/drive/home/", icon: "https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/1ec7129d900e442d8501d810efdaa369~tplv-jbbdkfciu3-image:0:0.image" },
       { title: "百度网盘", url: "https://pan.baidu.com/disk/main#/index?category=all", icon: "https://nd-static.bdstatic.com/m-static/v20-main/favicon-main.ico" },
+      { title: "蓝奏网盘", url: "https://pc.woozooo.com/mydisk.php", icon: "https://pc.woozooo.com/favicon.ico" },
+      { title: "MSDN", url: "https://msdn.itellyou.cn/", icon: "https://msdn.itellyou.cn/favicon.ico" },
+      { title: "MSDN - 山己几子木", url: "https://msdn.sjjzm.com/", icon: "https://msdn.sjjzm.com/favicon.ico" },
+      { title: "飞牛OS", url: "https://www.fnnas.com/", icon: "https://www.fnnas.com/favicon.ico" },
+      { title: "免费抠图", url: "https://koukoukou.cn/", icon: "https://koukoukou.cn/favicon.ico" },
+      { title: "Mini-Cover", url: "https://cover.ruom.top/", icon: "https://cover.ruom.top/favicon.svg" },
+      { title: "16图床", url: "https://111666.best/", icon: "/favicon.ico" },
+      { title: "IMGDD ", url: "https://imgdd.com/", icon: "/favicon.ico" },
+      { title: "ipfs图床", url: "https://cdn.ipfsscan.io/", icon: "https://pic.rmb.bdstatic.com/bjh/7f258369bc7cae227053a6588adb2453.png" },
+      
       
     ],
   },
@@ -78,11 +93,16 @@ APPS = [
       { title: "易搜", url: "https://yiso.fun/", icon: "https://yiso.fun/static/img/logo.png" },
       { title: "日式JK", url: "https://www.jk.rs/", icon: "https://www.jk.rs/favicon.ico" },
       { title: "极简壁纸", url: "https://bz.zzzmh.cn/index", icon: "https://bz.zzzmh.cn/favicon.ico" },
+      { title: "致美化", url: "https://zhutix.com/", icon: "https://zhutix.com/favicon.ico" },
+      { title: "4K图库", url: "https://www.4kpic.cn/", icon: "https://www.4kpic.cn/static/image/favicon-16x16.png " },
       { title: "AI绘画", url: "https://www.bilibili.com/read/cv22159609/", icon: "https://ideaiai.com/favicon.ico" },
       { title: "BOSS直聘", url: "https://www.zhipin.com/suzhou/?ka=query_select_city_101190400", icon: "https://www.zhipin.com/favicon.ico" },
       { title: "前程无忧", url: "https://www.51job.com", icon: "https://img04.51jobcdn.com/im/mkt/pc/favicon/favicon_51.ico?20221122" },
       { title: "猎聘", url: "https://c.liepin.com/", icon: "https://c.liepin.com/favicon.ico" },
       { title: "学子备战墙", url: "https://www.xzbzq.com/", icon: "/favicon.ico" },
+      { title: "Z-Library", url: "https://z-lib.io/", icon: "/favicon.ico" },
+      { title: "安娜的档案", url: "https://zh.annas-archive.org/", icon: "/favicon.ico" },
+      { title: "PixivNow", url: "https://pixiv.js.org/", icon: "https://pixiv.js.org/favicon.ico" },
 
     ],
   },
@@ -92,11 +112,13 @@ APPS = [
     flag: true,
     children: [
       { title: "通义千问", url: "https://tongyi.aliyun.com/qianwen/", icon: "https://img.alicdn.com/imgextra/i1/O1CN01AKUdEM1qP6BQVaYhT_!!6000000005487-2-tps-512-512.png" },
+      { title: "豆包", url: "https://www.doubao.com/chat/", icon: "//lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/web/logo-icon.png" },
+      { title: "WPS AI ", url: "https://ai.wps.cn/", icon: "//personal-act.wpscdn.cn/operations-fe/wps-ai/favicon.ico" },
+      { title: "Kimi", url: "https://kimi.moonshot.cn/", icon: "//statics.moonshot.cn/kimi-chat/favicon.ico" },
+      { title: "文心一言", url: "https://yiyan.baidu.com/", icon: "https://nlp-eb.cdn.bcebos.com/logo/favicon.ico" },
       { title: "BGM猫", url: "https://bgmcat.com/home", icon: "https://bgmcat.com/lanlogo.ico" },
       { title: "创想AI", url: "https://ideaiai.com/", icon: "https://ideaiai.com/favicon.ico" },
       { title: "EasyChat", url: "https://site.easygpt.work/", icon: "https://st2.ai55.cc/1/c5b51bb8fb6981624f945a3758fc78e4.webp" },
-      { title: "Kimi", url: "https://kimi.moonshot.cn/", icon: "//statics.moonshot.cn/kimi-chat/favicon.ico" },
-      { title: "文心一言", url: "https://yiyan.baidu.com/", icon: "https://nlp-eb.cdn.bcebos.com/logo/favicon.ico" },
       { title: "gpt3.5-1", url: "https://6kvk14.aitianhu1.top/#/chat/", icon: "https://uan6d6.aitianhu1.top/favicon.ico" },
       { title: "gpt3.5-3", url: "https://uan6d6.aitianhu1.top/", icon: "https://uan6d6.aitianhu1.top/favicon.ico" },
       { title: "gpt3.5-6", url: "https://chat04.a1r.cc/#/chat/", icon: "https://qiniuchat.littlewheat.com/favicon.svg" },
@@ -117,6 +139,7 @@ APPS = [
         url: "https://www.aliyun.com/minisite/goods?userCode=mp7vwkr3",
         icon: "https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico"
       },
+      { title: " WXT-dev", url: "https://wxt.dev/", icon: "https://wxt.dev/hero-logo.svg" },
       { title: "七牛云", url: "https://sso.qiniu.com/", icon: "https://qiniu.com/favicon.ico"},
       { title: "gitee", url: "https://gitee.com/", icon: "https://gitee.com/favicon.ico" },
       { title: "gitub", url: "https://github.com/", icon: "https://github.com/favicon.ico" },
@@ -141,6 +164,7 @@ APPS = [
       { title: "微信支付", url: "https://pay.weixin.qq.com/index.php/", icon: "https://wx.gtimg.com/core/favicon.ico" },
       { title: "飞书日记", url: "https://vvan7v9l4y8.feishu.cn/wiki/TI7Yweq4KisVeAkFYlbcuW9cnEb", icon: "//lf-package-cn.feishucdn.com/obj/feishu-static/ccm/pc/web/resource/bear/feishu.ico" },
       { title: "csdn", url: "https://blog.csdn.net/qd2013498006", icon: "https://www.csdn.net/favicon.ico" },
+      
      
     ],
   },
@@ -158,8 +182,16 @@ APPS = [
         icon: "https://fuliba123.net/wp-content/uploads/2024/01/d03c3-blog.luckly-mjw.cn.png" },
       { title: "PDF派", url: "https://www.pdfpai.com/", icon: "https://www.pdfpai.com/statics/images/favicon.ico" },
       { title: "百家姓加密", url: "https://www.bjxah.com/", icon: "https://api.iowen.cn/favicon/c.p2hp.com.png" },
-      { title: "蓝奏网盘", url: "https://pc.woozooo.com/mydisk.php", icon: "https://pc.woozooo.com/favicon.ico" },
       { title: "辞职信生成器", url: "https://www.cizhixin.com/czx/", icon: "https://www.cizhixin.com//favicon.ico" },
+      { title: "沧水KMS服务", url: "https://kms.cangshui.net/", icon: "https://kms.cangshui.net/favicon.ico" },
+      { title: "KMS激活", url: "https://kms.cx/", icon: "/favicon.ico" },
+      { title: "Windows美化", url: "https://winmoes.com/", icon: "https://winmoes.com/favicon.ico" },
+      { title: "傲梅分区助手", url: "https://www.disktool.cn/", icon: "https://www.disktool.cn/favicon.ico" },
+      { title: "微PE工具箱", url: "https://www.wepe.com.cn/download.html", icon: "https://www.wepe.com.cn/favicon.ico" },
+      { title: "沉浸式翻译 ", url: "https://immersivetranslate.com/", icon: "https://s.immersivetranslate.com/assets/r2-uploads/favicon.png" },
+      { title: "favicon.io", url: "https://favicon.io/", icon: "https://favicon.io/assets/static/favicon.b9532cc.ed88c65f76fa003989a0c683d668c765.png" },
+
+
     ],
   },
   {
@@ -174,6 +206,7 @@ APPS = [
         url: "https://www.iconfont.cn/",
         icon: "https://img.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico"
       },
+      { title: "Tabler Icons", url: "https://tabler.io/icons", icon: "https://tabler.io/favicon.ico" },
       { title: "Ant Design Vue", 
         url: "https://1x.antdv.com/docs/vue/introduce-cn/", 
         icon: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTI4cHgiIGhlaWdodD0iMTI4cHgiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Mi42ICg2NzQ5MSkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+VnVlPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSI2OS42NDQxMTYlIiB5MT0iMCUiIHgyPSI2OS42NDQxMTYlIiB5Mj0iMTAwJSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjlDREZGIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMxNDhFRkYiIG9mZnNldD0iMzcuODYwMDY4NyUiPjwvc3RvcD4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzBBNjBGRiIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9Ii0xOS44MTkxNTUzJSIgeTE9Ii0zNi43OTMxNDY0JSIgeDI9IjEzOC41NzkxOSUiIHkyPSIxNTcuNjM3NTA3JSIgaWQ9ImxpbmVhckdyYWRpZW50LTIiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjlDREZGIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwRjc4RkYiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSI2OC4xMjc5ODcyJSIgeTE9Ii0zNS42OTA1NzM3JSIgeDI9IjMwLjQ0MDA5MTQlIiB5Mj0iMTE0Ljk0MjY3OSUiIGlkPSJsaW5lYXJHcmFkaWVudC0zIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI0ZBOEU3RCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRjc0QTVDIiBvZmZzZXQ9IjUxLjI2MzUxOTElIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNGNTFEMkMiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iVnVlIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5LjAwMDAwMCwgOS4wMDAwMDApIj4KICAgICAgICAgICAgPHBhdGggZD0iTTg5Ljk2LDkwLjQ4IEM3OC41OCw5My40OCA2OC4zMyw4My4zNiA2Ny42Miw4Mi40OCBMNDYuNjYwNDQ4Nyw2Mi4yMjkyMjU4IEM0NS41MDIzODQ5LDYxLjExMDMyMzYgNDQuODQyNjg0NSw1OS41NzI4ODM1IDQ0LjgyOTY5ODcsNTcuOTYyNjM5NiBMNDQuNTAzNTU2NCwxNy41MjA5OTQ4IEM0NC40OTQ4ODYxLDE2LjQ0NTg3NDQgNDQuMDUzNzcxNCwxNS40MTk1MDk1IDQzLjI3OTY4NjQsMTQuNjczMzUxNyBMMjkuNjQ1OTk5OSwxLjUzMTUzNzM3IEMyOC4wNTU0NzUsLTAuMDAxNjA1MDQwMDUgMjUuNTIzMjQyMywwLjA0NDkxMjY1ODggMjMuOTkwMDk5OSwxLjYzNTQzNzU2IEMyMy4yNzE1MTIxLDIuMzgwOTIwNjYgMjIuODcsMy4zNzYwMDgzNCAyMi44Nyw0LjQxMTQzNzQ2IEwyMi44Nyw2NC4zODY0NzUxIEMyMi44Nyw2Ny4wODA3ODkxIDIzLjk1NzIyMzMsNjkuNjYxMTA2NyAyNS44ODU0MDksNzEuNTQyOTc0OCBMNjMuNjAwNDYxNSwxMDguMzUyMDYxIEM2NS45NDY2MzIzLDExMC42NDE4NzMgNjkuNjk2MzU4NCwxMTAuNjI0NjA1IDcyLjAyMTM0MDMsMTA4LjMxMzI4MSIgaWQ9IlBhdGgtQ29weSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSIgZmlsbC1ydWxlPSJub256ZXJvIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Ni40MTUwMDAsIDU0LjgzMTE1Nykgc2NhbGUoLTEsIDEpIHRyYW5zbGF0ZSgtNTYuNDE1MDAwLCAtNTQuODMxMTU3KSAiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTY4LDkwLjExNjMxMjIgQzU2LjYyLDkzLjExNjMxMjIgNDUuNDYsODMuMzYgNDQuNzUsODIuNDggTDIzLjc5MDQ0ODcsNjIuMjI5MjI1OCBDMjIuNjMyMzg0OSw2MS4xMTAzMjM2IDIxLjk3MjY4NDUsNTkuNTcyODgzNSAyMS45NTk2OTg3LDU3Ljk2MjYzOTYgTDIxLjYzMzU1NjQsMTcuNTIwOTk0OCBDMjEuNjI0ODg2MSwxNi40NDU4NzQ0IDIxLjE4Mzc3MTQsMTUuNDE5NTA5NSAyMC40MDk2ODY0LDE0LjY3MzM1MTcgTDYuNzc1OTk5OSwxLjUzMTUzNzM3IEM1LjE4NTQ3NSwtMC4wMDE2MDUwNDAwNSAyLjY1MzI0MjMyLDAuMDQ0OTEyNjU4OCAxLjEyMDA5OTkxLDEuNjM1NDM3NTYgQzAuNDAxNTEyMTI1LDIuMzgwOTIwNjYgMy45MDIxMTg3OGUtMTMsMy4zNzYwMDgzNCAzLjkwNzk4NTA1ZS0xMyw0LjQxMTQzNzQ2IEwzLjk0MzUxMjE4ZS0xMyw2NC4zODY0NzUxIEMzLjk0NjgxMTc3ZS0xMyw2Ny4wODA3ODkxIDEuMDg3MjIzMjYsNjkuNjYxMTA2NyAzLjAxNTQwOTAzLDcxLjU0Mjk3NDggTDQwLjc4MDcwOTIsMTA4LjQwMTEwMSBDNDMuMTA2OTMwNCwxMTAuNjcxNDQ0IDQ2LjgxODAxNTEsMTEwLjY3NjUyNSA0OS4xNTA0NDQ1LDEwOC40MTI1NjEiIGlkPSJQYXRoIiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTIpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTQzLjI5ODM0ODgsMTkuMDk5MTkzMSBMMjcuNTU2NjA3OSwzLjg4MjQ2MjQ0IEMyNi43NjI0MjgxLDMuMTE0NzY5NjcgMjYuNzQwOTU2MSwxLjg0ODYyMTc3IDI3LjUwODY0ODgsMS4wNTQ0NDE5NCBDMjcuODg1NDgyNiwwLjY2NDYwNjYxMSAyOC40MDQ0NDM4LDAuNDQ0NDcyNjUxIDI4Ljk0NjYzODYsMC40NDQ0NzI2NTEgTDYwLjM5MjUwMjEsMC40NDQ0NzI2NTEgQzYxLjQ5NzA3MTYsMC40NDQ0NzI2NTEgNjIuMzkyNTAyMSwxLjMzOTkwMzE1IDYyLjM5MjUwMjEsMi40NDQ0NzI2NSBDNjIuMzkyNTAyMSwyLjk4NTgzNzUgNjIuMTczMDM5NiwzLjUwNDA3NzQyIDYxLjc4NDI1MTIsMy44ODA3OTk0MiBMNDYuMDgwMTI4NSwxOS4wOTc1MzAxIEM0NS4zMDUxNTc5LDE5Ljg0ODQ0ODggNDQuMDc0MjE2NywxOS44NDkxODQ3IDQzLjI5ODM0ODgsMTkuMDk5MTkzMSBaIiBpZD0iUGF0aCIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0zKSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" 
