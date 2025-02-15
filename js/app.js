@@ -99,6 +99,7 @@ APPS = [
       { title: "AI绘画", url: "https://www.bilibili.com/read/cv22159609/", icon: "https://ideaiai.com/favicon.ico" },
       { title: "BOSS直聘", url: "https://www.zhipin.com/suzhou/?ka=query_select_city_101190400", icon: "https://www.zhipin.com/favicon.ico" },
       { title: "前程无忧", url: "https://www.51job.com", icon: "https://img04.51jobcdn.com/im/mkt/pc/favicon/favicon_51.ico?20221122" },
+      { title: "智联招聘", url: "https://i.zhaopin.com/", icon: "https://common-bucket.zhaopin.cn/img/zhilian-ico/zhilian-ico-1.0.0.png" },
       { title: "猎聘", url: "https://c.liepin.com/", icon: "https://c.liepin.com/favicon.ico" },
       { title: "学子备战墙", url: "https://www.xzbzq.com/", icon: "/favicon.ico" },
       { title: "Z-Library", url: "https://z-lib.io/", icon: "/favicon.ico" },
