@@ -15,6 +15,7 @@ APPS = [
       { title: "央视网", url: "https://tv.cctv.com/live/cctv1", icon: "https://tv.cctv.com/favicon.ico" },
       { title: "酷米动漫", url: "http://www.kumi.cn/", icon: "/favicon.ico" },
       { title: "高清影视", url: "https://1080zyk6.com/", icon: "https://1080zyk6.com/favicon.ico" },
+      { title: "港剧网", url: "https://www.gangjuw.cc", icon: "https://www.gangjuw.cc/favicon.ico" },
       { title: "韩剧看看", url: "https://www.hanjukankan.com/", icon: "/favicon.ico" },
       { title: "神马影院", url: "https://www.smyy93.com", icon: "https://www.smyy93.com/favicon.ico" },
       { title: "608影院-短剧", url: "https://www.608tv.com/vodtype/32.html", icon: "https://www.608tv.com/template/conch/asset/img/favicon.ico" },
@@ -111,6 +112,9 @@ APPS = [
     title: "GPT",
     flag: true,
     children: [
+      { title: "DeepSeek", url: "https://chat.deepseek.com/", icon: "https://cdn.deepseek.com/chat/icon.png" },
+      { title: "问小白", url: "https://www.wenxiaobai.com/chat/200006", icon: "https://www.wenxiaobai.com/new_favicon.ico" },
+      { title: "硅基流动", url: "https://cloud.siliconflow.cn/i/g7fbmxqd", icon: "https://framerusercontent.com/images/4li2PjWxZJmoGkzXRMJWU1rJmI.svg" },
       { title: "通义千问", url: "https://tongyi.aliyun.com/qianwen/", icon: "https://img.alicdn.com/imgextra/i1/O1CN01AKUdEM1qP6BQVaYhT_!!6000000005487-2-tps-512-512.png" },
       { title: "豆包", url: "https://www.doubao.com/chat/", icon: "//lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/web/logo-icon.png" },
       { title: "WPS AI ", url: "https://ai.wps.cn/", icon: "//personal-act.wpscdn.cn/operations-fe/wps-ai/favicon.ico" },
@@ -149,7 +153,6 @@ APPS = [
         icon: "https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico"
       },
       { title: "51 LA 统计", url: "https://user.51.la/i/product", icon: "https://51.la/favicon.ico" },
-      { title: "工具库汇总", url: "https://vvan7v9l4y8.feishu.cn/wiki/Pk0cwfupOi8KKTkeqpqcesWonQe", icon: "/favicon.ico" },
       { title: "支付宝", url: "https://www.alipay.com/", icon: "https://i.alipayobjects.com/common/favicon/favicon.ico" },
       {
         title: "微信开放平台",
