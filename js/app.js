@@ -102,7 +102,7 @@ APPS = [
       { title: "智联招聘", url: "https://i.zhaopin.com/", icon: "https://common-bucket.zhaopin.cn/img/zhilian-ico/zhilian-ico-1.0.0.png" },
       { title: "猎聘", url: "https://c.liepin.com/", icon: "https://c.liepin.com/favicon.ico" },
       { title: "学子备战墙", url: "https://www.xzbzq.com/", icon: "/favicon.ico" },
-      { title: "Z-Library", url: "https://z-lib.io/", icon: "/favicon.ico" },
+      { title: "Z-Library", url: "https://zh.z-lib.help/", icon: "/favicon.ico" },
       { title: "安娜的档案", url: "https://zh.annas-archive.org/", icon: "/favicon.ico" },
       { title: "PixivNow", url: "https://pixiv.js.org/", icon: "https://pixiv.js.org/favicon.ico" },
 
