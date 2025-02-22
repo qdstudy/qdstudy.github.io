@@ -180,7 +180,7 @@ APPS = [
       { title: "在线P图", url: "https://www.meishuzi.cn/size", icon: "https://www.meishuzi.cn/favicon.ico" },
       { title: "无水印解析", url: "https://dlpanda.com/zh-CN", icon: "https://dlpanda.com/favicon.ico" },
       { title: "哔哩哔哩视频解析", url: "https://snapany.com/zh/bilibili", icon: "https://snapany.com/favicon.ico" },
-      { title: "B站视频下载", url: "https://zhouql.vip/bilibili/", icon: "/favicon.ico" },
+      { title: "音频提取", url: "https://www.aconvert.com/cn/audio/extract/", icon: "https://www.aconvert.com/favicon.ico" },
       { title: "m3u8 视频下载", 
         url: "https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html",
         icon: "https://fuliba123.net/wp-content/uploads/2024/01/d03c3-blog.luckly-mjw.cn.png" },
