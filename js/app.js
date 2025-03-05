@@ -24,7 +24,6 @@ APPS = [
       { title: "三集电影", url: "https://www.3jdy.com/", icon: "https://www.3jdy.com/upload/mxprocms/20240527-1/bf28237e94f7363a18b6379730ea8900.png" },
       { title: "飞快TV", url: "https://feikuai.tv/", icon: "https://feikuai.tv/upload/mxprocms/20240415-1/4c6ddace7d0fc43ec678c070a6255c68.png" },
       { title: "LIBVIO", url: "https://iioo.me/", icon: "https://www.libvio.fun/statics/img/favicon.ico" },
-      { title: "趣动漫", url: "https://www.qdm8.com/", icon: "https://www.qdm8.com/favicon.ico" },
 
 
 
@@ -95,7 +94,6 @@ APPS = [
       { title: "日式JK", url: "https://www.jk.rs/", icon: "https://www.jk.rs/favicon.ico" },
       { title: "极简壁纸", url: "https://bz.zzzmh.cn/index", icon: "https://bz.zzzmh.cn/favicon.ico" },
       { title: "致美化", url: "https://zhutix.com/", icon: "https://zhutix.com/favicon.ico" },
-      { title: "4K图库", url: "https://www.4kpic.cn/", icon: "https://www.4kpic.cn/static/image/favicon-16x16.png " },
       { title: "AI绘画", url: "https://www.bilibili.com/read/cv22159609/", icon: "https://ideaiai.com/favicon.ico" },
       { title: "BOSS直聘", url: "https://www.zhipin.com/suzhou/?ka=query_select_city_101190400", icon: "https://www.zhipin.com/favicon.ico" },
       { title: "前程无忧", url: "https://www.51job.com", icon: "https://img04.51jobcdn.com/im/mkt/pc/favicon/favicon_51.ico?20221122" },
@@ -105,6 +103,9 @@ APPS = [
       { title: "Z-Library", url: "https://zh.z-lib.help/", icon: "/favicon.ico" },
       { title: "安娜的档案", url: "https://zh.annas-archive.org/", icon: "/favicon.ico" },
       { title: "PixivNow", url: "https://pixiv.js.org/", icon: "https://pixiv.js.org/favicon.ico" },
+      { title: "switch游戏", url: "https://www.ns211.com/", icon: "https://www.ns211.com/wp-content/uploads/2023/10/1697175282-5871b46b93988ae.ico" },
+      { title: "Switch618|", url: "https://www.switch618.com/", icon: "https://www.switch618.com/wp-content/uploads/2024/05/23154031569.webp" },
+      { title: "单击游戏合集", url: "https://pan.quark.cn/s/9c7366d478e2", icon: "https://pan.quark.cn/favicon.ico" },
 
     ],
   },
