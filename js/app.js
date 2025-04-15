@@ -247,14 +247,9 @@ APPS = [
       { title: "Common.Utility", url: "https://mp.weixin.qq.com/s?__biz=MzIxMTUzNzM5Ng==&mid=2247492029&idx=1&sn=461c7773635bdc22b52421bbddcee15d&scene=21#wechat_redirect", icon: "/favicon.ico" },
       { title: "Easy-DotNET", url: "https://www.easy-dotnet.com/pages/easytool/", icon: "https://www.easy-dotnet.com/img/favicon.ico" },
       { title: "TouchSocket", url: "https://touchsocket.net/docs/current/tcpintroduction", icon: "https://touchsocket.net/img/TouchSocketlogo.png" },
+      { title: "Halcon社区", url: "https://www.51halcon.com/", icon: "https://www.51halcon.com/favicon.ico" },
+
       
-
-
-
-
-
-
-
     ],
   },
 ];
