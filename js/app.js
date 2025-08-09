@@ -1,7 +1,7 @@
 APPS = [
   {
     id: 1,
-    title: "媒体",
+    title: "媒体", 
     flag: true,
     children: [
       { title: "哔哩哔哩", url: "https://www.bilibili.com/", icon: "https://www.bilibili.com/favicon.ico" },
