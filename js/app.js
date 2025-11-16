@@ -7,6 +7,7 @@ APPS = [
       { title: "哔哩哔哩", url: "https://www.bilibili.com/", icon: "https://www.bilibili.com/favicon.ico" },
       { title: "网易云音乐", url: "https://music.163.com/#/my/m/music/playlist?id=963538401", icon: "http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg" },
       { title: "洛雪音乐", url: "https://lxmusic.toside.cn/", icon: "https://lxmusic.toside.cn/img/favicon.ico" },
+      { title: "AlgerMusic", url: "http://music.alger.fun/#/", icon: "http://music.alger.fun/favicon.ico" },
       {
         title: "抖音网页版",
         url: "https://www.douyin.com/",
@@ -22,24 +23,6 @@ APPS = [
       { title: "飞快TV", url: "https://feikuai.tv/", icon: "https://feikuai.tv/upload/mxprocms/20240415-1/4c6ddace7d0fc43ec678c070a6255c68.png" },
       { title: "LIBVIO", url: "https://iioo.me/", icon: "https://www.libvio.fun/statics/img/favicon.ico" },
       { title: "玩机器直播间", url: "https://www.douyu.com/topic/blastbountys2?rid=6979222&dyshid=13f8061a-fd7537ed60cdf5c2d6f8b6b400001701", icon: "https://www.douyu.com/favicon.ico" },
-
-
-
-    ],
-  },
-  {
-    id: 2,
-    title: "生活",
-    flag: true,
-    children: [
-      { title: "今日热榜", url: "https://hot.baiwumm.com/", icon: "https://hot.baiwumm.com/logo.svg" },
-      { title: "5E Play", url: "https://www.5eplay.com/", icon: "https://static.5eplay.com/images/favicon.ico" },
-      { title: "电动邦", url: "https://www.diandong.com", icon: "//g.dd-img.com/pc/img/favicon/favicon.ico" },
-      { title: "懂车帝", url: "https://www.dongchedi.com/", icon: "//p3.dcarimg.com/obj/eden-cn/vlseh7ubqnuhs/motor/favicon/favicon-96x96.png" },
-      { title: "小熊油耗", url: "http://www.xiaoxiongyouhao.com/fprice/", icon: "http://www.xiaoxiongyouhao.com/favicon.ico" },
-      { title: "丁香园用药助手", url: "https://drugs.dxy.cn/", icon: "https://drugs.dxy.cn/pc/imgs/logo-icon.png" },
-      { title: "下厨房", url: "https://www.xiachufang.com/", icon: "https://s.chuimg.com/favicon.ico" },
-      { title: "猫眼票房", url: "https://piaofang.maoyan.com/dashboard", icon: "https://obj.pipi.cn/festatic/piaofang/moviepro/favicon.ico" },
 
 
 
@@ -71,7 +54,7 @@ APPS = [
       { title: "16图床", url: "https://111666.best/", icon: "/favicon.ico" },
       { title: "IMGDD ", url: "https://imgdd.com/", icon: "/favicon.ico" },
       { title: "ipfs图床", url: "https://cdn.ipfsscan.io/", icon: "https://pic.rmb.bdstatic.com/bjh/7f258369bc7cae227053a6588adb2453.png" },
-      
+      { title: "像素生成器", url: "https://pixelartgenerator.app/zh", icon: "https://pixelartgenerator.app/favicon.ico" },
       
     ],
   },
@@ -81,13 +64,14 @@ APPS = [
     flag: true,
     children: [
       { title: "软件清单", url: "https://vvan7v9l4y8.feishu.cn/wiki/CQNOwPiq5ip0CJkYXQTczPxJnQg", icon: "/favicon.ico" },
+      { title: "夸克云搜", url: "https://qkyunso.com/index", icon: "https://qkyunso.com/favicon.ico" },
+      { title: "易搜", url: "https://yiso.fun/", icon: "https://yiso.fun/static/img/logo.png" },
       {
         title: "软件库",
         url: "https://mp.weixin.qq.com/s?__biz=MzIzNDUxNzUzNw==&mid=2247559735&idx=1&sn=2b099655c5a4051c576b6c9f2d5a2ec0",
         icon: "https://mp.weixin.qq.com/favicon.ico" 
       },
       { title: "油猴脚本", url: "https://greasyfork.org/zh-CN", icon: "https://greasyfork.org/vite/assets/blacklogo16-37ZGLlXh.png" },
-      { title: "易搜", url: "https://yiso.fun/", icon: "https://yiso.fun/static/img/logo.png" },
       { title: "日式JK", url: "https://www.jk.rs/", icon: "https://www.jk.rs/favicon.ico" },
       { title: "极简壁纸", url: "https://bz.zzzmh.cn/index", icon: "https://bz.zzzmh.cn/favicon.ico" },
       { title: "BOSS直聘", url: "https://www.zhipin.com/suzhou/?ka=query_select_city_101190400", icon: "https://www.zhipin.com/favicon.ico" },
@@ -101,6 +85,24 @@ APPS = [
       { title: "switch游戏", url: "https://www.ns211.com/", icon: "https://www.ns211.com/wp-content/uploads/2023/10/1697175282-5871b46b93988ae.ico" },
       { title: "Switch618|", url: "https://www.switch618.com/", icon: "https://www.switch618.com/wp-content/uploads/2024/05/23154031569.webp" },
       { title: "单击游戏合集", url: "https://pan.quark.cn/s/9c7366d478e2", icon: "https://pan.quark.cn/favicon.ico" },
+
+    ],
+  },
+  {
+    id: 2,
+    title: "生活",
+    flag: true,
+    children: [
+      { title: "今日热榜", url: "https://hot.baiwumm.com/", icon: "https://hot.baiwumm.com/logo.svg" },
+      { title: "5E Play", url: "https://www.5eplay.com/", icon: "https://static.5eplay.com/images/favicon.ico" },
+      { title: "电动邦", url: "https://www.diandong.com", icon: "//g.dd-img.com/pc/img/favicon/favicon.ico" },
+      { title: "懂车帝", url: "https://www.dongchedi.com/", icon: "//p3.dcarimg.com/obj/eden-cn/vlseh7ubqnuhs/motor/favicon/favicon-96x96.png" },
+      { title: "小熊油耗", url: "http://www.xiaoxiongyouhao.com/fprice/", icon: "http://www.xiaoxiongyouhao.com/favicon.ico" },
+      { title: "丁香园用药助手", url: "https://drugs.dxy.cn/", icon: "https://drugs.dxy.cn/pc/imgs/logo-icon.png" },
+      { title: "下厨房", url: "https://www.xiachufang.com/", icon: "https://s.chuimg.com/favicon.ico" },
+      { title: "猫眼票房", url: "https://piaofang.maoyan.com/dashboard", icon: "https://obj.pipi.cn/festatic/piaofang/moviepro/favicon.ico" },
+
+
 
     ],
   },
